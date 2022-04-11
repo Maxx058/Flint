@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, sans-serif;
+}
+
+body {
+  height: 3000px;
+}
+
+li,
+a {
+  font-weight: 600px;
+  font-size: 16px;
+  color: #121212;
+  text-decoration: none;
+}
+
+/* opening of Navbar */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.nav-area {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.nav-area li {
+  font-weight: 600;
+}
+
+.logo {
+  cursor: pointer;
+  font-size: 28px;
+  transition: all 0.3s ease 0s;
+}
+
+.logo:hover {
+  color: #1994ed;
+  cursor: pointer;
+  font-size: 28px;
+  transition: all 0.3s ease 0s;
+}
+
+.nav-area li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav-area li a:hover {
+  color: #1994ed;
+}
+
+.nav-cta {
+  background-color: #1994ed;
+  font-size: 14px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  color: white;
+  border: none;
+}
+
+.nav-cta:hover {
+  background-color: #005695;
+  transition: all 0.3s ease 0s;
+}
+
+/* Closing of Navbar */
+
+/* opening of img container */
+
+.img-container {
+  background-image: url("/Images/about/heading-img.png");
+  height: 520px;
+  margin-top: 60px;
+  background-size: cover;
+  margin-left: 12em;
+  margin-right: 12em;
+  border-radius: 40px;
+  background-size: cover;
+}
+
+/* closing of img-container */
+
+/* opening of vision */
+
+.vision {
+  margin-top: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.vision-heading {
+  font-size: 44px;
+  font-weight: 600;
+}
+
+.vision-body {
+  font-size: 20px;
+  font-weight: 400;
+  color: #666666;
+  margin-top: 32px;
+  width: 960px;
+  text-align: center;
+}
+
+/* closing of vision */
+
+/* opening of img-container-2 */
+
+.img-container-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 104px;
+  margin-top: 160px;
+  height: 420px;
+  margin-left: 12em;
+  margin-right: 12em;
+}
+
+.img-container-2-item1 {
+  width: 540px;
+  height: 380px;
+  background-image: url("/Images/about/office1.png");
+  border-radius: 20px;
+  background-size: cover;
+  margin-bottom: 96px;
+}
+
+.img-container-2-item2 {
+  width: 540px;
+  height: 380px;
+  background-image: url("/Images/about/office2.png");
+  border-radius: 20px;
+  background-size: cover;
+}
+
+/* closing of img-container-2 */
+
+/* opening of achievements */
+
+.achievements {
+  display: flex;
+  justify-content: center;
+  gap: 160px;
+  align-items: center;
+  height: 320px;
+  background-color: #e8e8e8;
+  margin-top: 180px;
+  margin-bottom: 80px;
+}
+
+.achievements-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.achievements-info {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.achievements-name {
+  font-size: 24px;
+  color: #666666;
+}
+
+/* closing of achievements */
+
+/* opening of team */
+.team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 180px;
+  gap: 80px;
+}
+
+.team-heading {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.team-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 132px;
+}
+
+.team-member-image {
+  height: 240px;
+  width: 180px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+
+.team-member-name {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+.team-member-designation {
+  font-size: 16px;
+  color: #666666;
+  text-align: center;
+}
+
+/* closing of team */
+
+/* opening of get in touch */
+.getintouch {
+  margin-top: 160px;
+  width: 1224px;
+  height: 420px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 160px;
+}
+
+.getintouch-body {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+.getintouch-hireus {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+}
+
+.getintouch-heading {
+  font-size: 44px;
+  font-weight: 600;
+  width: 568px;
+  margin-bottom: 32px;
+}
+
+.getintouch-cta {
+  display: flex;
+  border: none;
+  padding: 16px 28px;
+  border-radius: 20px;
+  background-color: #121212;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  width: fit-content;
+  align-items: left;
+  justify-content: center;
+}
+
+.getintouch-img {
+  background-image: url("/Images/getintouch.png");
+  background-size: cover;
+  width: 360px;
+  height: 360px;
+}
+
+/* closing of get in touch*/
+
+/* opening of footer */
+
+.footer {
+  margin-top: 160px;
+  height: 360px;
+}
+.footer-columns-all {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 140px;
+  align-items: flex-start;
+  margin-left: 12em;
+  margin-right: 12em;
+}
+.footer-flint-info {
+  display: flex;
+  flex-direction: column;
+  width: 248px;
+}
+.footer-logo {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.footer-info-group-all {
+  display: flex;
+  flex-direction: column;
+  width: 243px;
+  gap: 20px;
+  margin-top: 32px;
+}
+.footer-info-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-info-group-icon {
+  height: 24px;
+  width: 24px;
+}
+
+.footer-info-group-text {
+  font-size: 16px;
+  color: #666666;
+}
+
+.footer-column-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.footer-column-items-all {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 20px;
+}
+.footer-column-items {
+  font-size: 16px;
+  color: #666666;
+}
+
+/* closing of footer */
