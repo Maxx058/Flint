@@ -236,3 +236,127 @@ header {
   color: #868686;
   width: 440px;
 }
+
+/* closing of working benefits */
+
+/* opening of get in touch */
+.getintouch {
+  margin-top: 160px;
+  width: 1224px;
+  height: 420px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 160px;
+}
+
+.getintouch-body {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+.getintouch-hireus {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+}
+
+.getintouch-heading {
+  font-size: 44px;
+  font-weight: 600;
+  width: 568px;
+  margin-bottom: 32px;
+}
+
+.getintouch-cta {
+  display: flex;
+  border: none;
+  padding: 16px 28px;
+  border-radius: 20px;
+  background-color: #121212;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  width: fit-content;
+  align-items: left;
+  justify-content: center;
+}
+
+.getintouch-img {
+  background-image: url("/Images/getintouch.png");
+  background-size: cover;
+  width: 360px;
+  height: 360px;
+}
+
+/* closing of get in touch*/
+
+/* opening of footer */
+
+.footer {
+  margin-top: 160px;
+  height: 360px;
+}
+.footer-columns-all {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 140px;
+  align-items: flex-start;
+  margin-left: 12em;
+  margin-right: 12em;
+}
+.footer-flint-info {
+  display: flex;
+  flex-direction: column;
+  width: 248px;
+}
+.footer-logo {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.footer-info-group-all {
+  display: flex;
+  flex-direction: column;
+  width: 243px;
+  gap: 20px;
+  margin-top: 32px;
+}
+.footer-info-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-info-group-icon {
+  height: 24px;
+  width: 24px;
+}
+
+.footer-info-group-text {
+  font-size: 16px;
+  color: #666666;
+}
+
+.footer-column-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.footer-column-items-all {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 20px;
+}
+.footer-column-items {
+  font-size: 16px;
+  color: #666666;
+}
+
+/* closing of footer */
