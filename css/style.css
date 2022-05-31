@@ -129,7 +129,7 @@ header {
 
 .Dsgn-img {
   background-image: url("/Images/main.jpg");
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   height: 460px;
   margin-top: 80px;
   background-size: cover;
@@ -142,7 +142,7 @@ header {
 /* Opening of Section 2 */
 
 .sec2 {
-  margin-top: 180px;
+  margin-top: 120px;
   display: flex;
 
   justify-content: space-around;
@@ -181,7 +181,7 @@ header {
 
 .sec3 {
   margin: auto 0;
-  margin-top: 220px;
+  margin-top: 160px;
   display: flex;
   gap: 160px;
   justify-content: space-around;

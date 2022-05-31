@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, sans-serif;
+}
+
+body {
+  height: 3000px;
+}
+
+li,
+a {
+  font-weight: 600px;
+  font-size: 16px;
+  color: #121212;
+  text-decoration: none;
+}
+
+/* opening of Navbar */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.nav-area {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.nav-area li {
+  font-weight: 600;
+}
+
+.logo {
+  cursor: pointer;
+  font-size: 28px;
+  transition: all 0.3s ease 0s;
+}
+
+.logo:hover {
+  color: #1994ed;
+  cursor: pointer;
+  font-size: 28px;
+  transition: all 0.3s ease 0s;
+}
+
+.nav-area li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav-area li a:hover {
+  color: #1994ed;
+}
+
+.nav-cta {
+  background-color: #1994ed;
+  font-size: 14px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  color: white;
+  border: none;
+}
+
+.nav-cta:hover {
+  background-color: #005695;
+  transition: all 0.3s ease 0s;
+}
+
+/* Closing of Navbar */
+
+/* opening of Section 1 */
+
+.head-intro {
+  margin-top: 56px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.heading {
+  margin-top: 12px;
+  font-size: 48px;
+  font-weight: 600;
+  width: 600px;
+  text-align: center;
+}
+
+.sub-heading {
+  font-size: 20px;
+  color: #666666;
+}
+
+.img-container {
+  background-image: url("/Images/design1.jpg");
+  height: 520px;
+  margin-top: 120px;
+  background-size: cover;
+  margin-left: 12em;
+  margin-right: 12em;
+  border-radius: 40px;
+  background-size: cover;
+}
+
+/* closing of Section 1 */
+
+/* opening of what we do */
+
+.whatwedo {
+  display: flex;
+  flex-direction: row;
+  gap: 180px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+}
+.whatwedo-heading {
+  font-size: 32px;
+  font-weight: 600;
+  width: 132px;
+}
+
+.whatwedo-body {
+  font-size: 20px;
+  color: #666666;
+  width: 680px;
+}
+/* closing of what we do */
+
+/* opening of project */
+
+.project {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 120px;
+}
+
+.project-column-1 {
+  justify-content: center;
+  display: flex;
+  gap: 80px;
+  flex-direction: column;
+}
+
+.project-column-2 {
+  justify-content: center;
+  display: flex;
+  gap: 80px;
+  flex-direction: column;
+  padding-top: 220px;
+}
+
+.project-item {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-img {
+  width: 620px;
+  height: 480x;
+  border-radius: 20px;
+}
+
+/* closing of project */
