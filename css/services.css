@@ -129,3 +129,46 @@ header {
   width: 620px;
 }
 /* closing of what we do */
+
+/* opening of service briefs */
+
+.service-briefs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 180px;
+  flex-direction: column;
+}
+
+.service-briefs-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.service-item-image {
+  width: 524px;
+  height: 326px;
+}
+
+.service-item-textgrp {
+s
+}
+
+.service-item-heading {
+}
+
+.service-item-body {
+
+}
+
+.service-item-cta {
+  border: 1px solid #a4a4a4;
+  padding: 16px 28px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+}
