@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, sans-serif;
+}
+
+body {
+  height: 3000px;
+}
+
+li,
+a {
+  font-weight: 600px;
+  font-size: 16px;
+  color: #121212;
+  text-decoration: none;
+}
+
+/* opening of Navbar */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.nav-area {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.nav-area li {
+  font-weight: 600;
+}
+
+.logo {
+  cursor: pointer;
+  font-size: 28px;
+  transition: all 0.3s ease 0s;
+}
+
+.logo:hover {
+  color: #1994ed;
+  cursor: pointer;
+  font-size: 28px;
+  transition: all 0.3s ease 0s;
+}
+
+.nav-area li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav-area li a:hover {
+  color: #1994ed;
+}
+
+.nav-cta {
+  background-color: #1994ed;
+  font-size: 14px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  color: white;
+  border: none;
+}
+
+.nav-cta:hover {
+  background-color: #005695;
+  transition: all 0.3s ease 0s;
+}
+
+/* Closing of Navbar */
+
+/* opening of Section 1 */
+
+.head-intro {
+  margin-top: 100px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.heading {
+  margin-top: 12px;
+  font-size: 48px;
+  font-weight: 600;
+  width: 400px;
+  text-align: center;
+}
+
+/* closing of Section 1 */
