@@ -7,10 +7,6 @@
   font-family: Poppins, sans-serif;
 }
 
-body {
-  height: 3000px;
-}
-
 li,
 a {
   font-weight: 600px;
@@ -346,3 +342,18 @@ header {
 }
 
 /* closing of footer */
+
+@media (max-width: 1000px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .vision-body {
+    font-size: 16px;
+    font-weight: 400;
+    color: #121212;
+    margin-top: 20px;
+    width: 960px;
+    text-align: center;
+  }
+}
