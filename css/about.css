@@ -56,10 +56,10 @@ header {
 }
 
 .nav-cta {
-  background-color: #1994ed;
+  background-color: #1d85ff;
   font-size: 14px;
   padding: 12px 20px;
-  border-radius: 8px;
+  border-radius: 12px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
   color: white;
@@ -258,7 +258,7 @@ header {
   border: none;
   padding: 16px 28px;
   border-radius: 20px;
-  background-color: #121212;
+  background-color: #1d85ff;
   color: #ffffff;
   cursor: pointer;
   font-size: 16px;
@@ -342,18 +342,3 @@ header {
 }
 
 /* closing of footer */
-
-@media (max-width: 1000px) {
-  body {
-    overflow-x: hidden;
-  }
-
-  .vision-body {
-    font-size: 16px;
-    font-weight: 400;
-    color: #121212;
-    margin-top: 20px;
-    width: 960px;
-    text-align: center;
-  }
-}

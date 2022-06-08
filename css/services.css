@@ -60,10 +60,10 @@ header {
 }
 
 .nav-cta {
-  background-color: #1994ed;
+  background-color: #1d85ff;
   font-size: 14px;
   padding: 12px 20px;
-  border-radius: 8px;
+  border-radius: 12px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
   color: white;
@@ -217,6 +217,7 @@ header {
   gap: 120px;
   justify-content: center;
   align-items: center;
+  width: auto;
 }
 
 .working-benefits-item {
