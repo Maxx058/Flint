@@ -7,10 +7,6 @@
   font-family: Poppins, sans-serif;
 }
 
-body {
-  height: 3000px;
-}
-
 li,
 a {
   font-weight: 600px;
@@ -94,6 +90,9 @@ header {
   margin-bottom: 80px;
 }
 
+/* opening of form */
+
+/* opening of type selector */
 .input-container-heading {
   font-size: 20px;
   font-weight: 600;
@@ -113,13 +112,10 @@ header {
   width: auto;
   align-items: center;
   background-color: #ffffff;
-  border-color: #c2c2c2;
   border: 1px solid;
-  color: #121212;
   border-color: #c2c2c2;
   justify-content: center;
   cursor: pointer;
-  box-shadow: 10px 10px 80px rgb(0, 0, 0, 0.1);
 }
 
 .svcs1-txt {
@@ -127,22 +123,103 @@ header {
   font-weight: 500;
 }
 
+/* closing of type selector */
+/* opening of inputs */
 .inputs {
   display: flex;
   flex-direction: column;
 }
+
 .input-field {
   border: none;
-  border-bottom: 2px solid #c2c2c2;
+  border-bottom: 2px solid #e2e2e2;
   padding-bottom: 16px;
   font-size: 16px;
   outline: none;
 }
 
-.text-field {
-  width: 800px;
-  word-break: break-word;
-}
 .inputs-container {
   row-gap: 64px;
 }
+
+.primary-button {
+  display: flex;
+  border-radius: 20px;
+  padding: 16px 32px;
+  align-items: center;
+  background-color: #1d85ff;
+  border: none;
+  color: #ffffff;
+  justify-content: center;
+  cursor: pointer;
+  margin: auto;
+}
+
+/* closing of inputs */
+/* closing of form */
+
+/* opening of footer */
+
+.footer {
+  margin-top: 160px;
+  height: 280px;
+}
+.footer-columns-all {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 140px;
+  align-items: flex-start;
+  margin-left: 12em;
+  margin-right: 12em;
+}
+.footer-flint-info {
+  display: flex;
+  flex-direction: column;
+  width: 248px;
+}
+.footer-logo {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.footer-info-group-all {
+  display: flex;
+  flex-direction: column;
+  width: 243px;
+  gap: 20px;
+  margin-top: 32px;
+}
+.footer-info-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-info-group-icon {
+  height: 24px;
+  width: 24px;
+}
+
+.footer-info-group-text {
+  font-size: 16px;
+  color: #666666;
+}
+
+.footer-column-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.footer-column-items-all {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 20px;
+}
+.footer-column-items {
+  font-size: 16px;
+  color: #666666;
+}
+
+/* closing of footer */

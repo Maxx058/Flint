@@ -45,7 +45,7 @@ header {
 }
 
 .logo:hover {
-  color: #1994ed;
+  color: #1d85ff;
   cursor: pointer;
   font-size: 28px;
   transition: all 0.3s ease 0s;
@@ -56,7 +56,7 @@ header {
 }
 
 .nav-area li a:hover {
-  color: #1994ed;
+  color: #1d85ff;
 }
 
 .nav-cta {
@@ -79,27 +79,26 @@ header {
 
 /* opening of Section 1 */
 
-.head-intro {
+.intro-container {
   margin-top: 56px;
   display: grid;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
-.heading1 {
+.section-heading {
   margin-top: 12px;
   font-size: 48px;
   font-weight: 600;
-  max-width: 940px;
   text-align: center;
 }
 
-.subhead1 {
+.subheading {
   font-size: 20px;
   color: #666666;
 }
 
-.sec1 {
+.intro-services {
   display: flex;
   gap: 14px;
   max-width: auto;
@@ -108,26 +107,26 @@ header {
   justify-content: center;
 }
 
-.line {
-  height: 2px;
+.intro-services-line-seperator {
+  height: 1px;
   width: 60px;
-  background: #a4a4a4;
+  background: #c2c2c2;
 }
 
-.sec1-cta {
+.intro-services-item {
   cursor: pointer;
   font-size: 20px;
   font-weight: 600;
   transition: all 0.3s ease 0s;
 }
 
-.sec1-cta:hover {
+.intro-service-item:hover {
   cursor: pointer;
   color: #1994ed;
   transition: all 0.3s ease 0s;
 }
 
-.Dsgn-img {
+.section-image-container {
   background-image: url("/Images/main.jpg");
   /* background-attachment: fixed; */
   height: 460px;
@@ -137,210 +136,115 @@ header {
   margin-right: 12em;
   border-radius: 40px;
 }
-/* closing of Section 1 */
+/* closing of intro*/
 
-/* Opening of Section 2 */
+/* Opening of item grid section */
 
-.sec2 {
+.item-grid {
   margin-top: 120px;
   display: flex;
-
-  justify-content: space-around;
-  margin-left: 12em;
-  margin-right: 12em;
-}
-
-.sec2grp {
-  margin: auto 0;
-}
-
-.head2 {
-  font-size: 44px;
-  color: #121212;
-  width: 410px;
-  font-weight: 600;
-  margin-top: 16px;
-}
-
-.sec2body {
-  margin-top: 24px;
-  font-size: 16px;
-  color: #666666;
-  width: 460px;
-}
-.sec2img {
-  background-image: url("/Images/Aboutbrief.png");
-  width: 440px;
-  height: 440px;
-  background-size: cover;
-}
-
-/* Closing of Section 2 */
-
-/* Opening of Section 3*/
-
-.sec3 {
-  margin: auto 0;
-  margin-top: 160px;
-  display: flex;
-  gap: 160px;
-  justify-content: space-around;
+  gap: 120px;
+  justify-content: center;
   align-items: center;
-  margin-left: 12em;
-  margin-right: 12em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.sec3-img {
+.item-grid-img {
   background-image: url("/Images/idea.png");
   width: 440px;
   height: 440px;
   background-size: cover;
 }
 
-.sec3-grp {
-  margin-top: 60px;
-  margin-bottom: 60px;
+.item-grid-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
 }
 
-.sec3-head {
+.item-grid-group-heading {
   font-size: 44px;
   color: #121212;
-  width: 260px;
   font-weight: 600;
 }
 
-.sec3-body {
-  margin-top: 16px;
+.item-grid-group-body {
   font-size: 16px;
   color: #666666;
   width: 480px;
 }
 
-.sec3-svcs {
+.services-button-container {
+  display: flex;
+  flex-direction: column;
   width: auto;
-  margin-top: 40px;
+  margin-top: 32px;
+  gap: 20px;
 }
-.svcs-row1 {
+.services-button-container-row {
   display: flex;
-  gap: 12px;
-  margin-bottom: 12px;
+  gap: 20px;
+  justify-content: center;
 }
-.svcs1 {
+.services-button {
   display: flex;
-  border: none;
-  border-radius: 40px;
+  gap: 16px;
   padding: 16px 24px;
-  width: auto;
   align-items: center;
-  background-color: #e8e8e8;
-  color: #121212;
   justify-content: center;
   cursor: pointer;
-  box-shadow: 10px 10px 80px rgb(0, 0, 0, 0.1);
+  border: 1px solid;
+  border-color: #e2e2e2;
+  border-radius: 40px;
+  transition: all 0.3s ease 0s;
 }
-.svcs1-icon {
+
+.services-button:hover {
+  background-color: #e2e2e2;
+}
+
+.services-button-icon {
   background-image: url("/Images/brush.svg");
   height: 32px;
   width: 32px;
   background-size: contain;
-  margin-right: 12px;
 }
 
-.svcs1-txt {
+.services-button-text {
   font-size: 18px;
   font-weight: 500;
 }
 
-.svcs2 {
-  display: flex;
-  border: none;
-  background-color: #e8e8e8;
-  border-radius: 40px;
-  padding: 16px 24px;
-  width: auto;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 10px 10px 80px rgb(0, 0, 0, 0.1);
-}
-.svcs2-icon {
-  background-image: url("/Images/global.svg");
-  height: 32px;
-  width: 32px;
-  background-size: contain;
-  margin-right: 12px;
-  stroke: #ffffff;
-}
-
-.svcs2-txt {
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.svcs-row2 {
-  display: flex;
-  gap: 12px;
-  justify-content: center;
-  align-items: center;
-}
-
-.svcs3 {
-  display: flex;
-  border: none;
-  background-color: #e8e8e8;
-  border-radius: 40px;
-  padding: 16px 24px;
-  width: auto;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 10px 10px 80px rgb(0, 0, 0, 0.1);
-}
-.svcs3-icon {
-  background-image: url("/Images/mobile.svg");
-  height: 32px;
-  width: 32px;
-  background-size: contain;
-  margin-right: 12px;
-}
-
-.svcs3-txt {
-  font-size: 18px;
-  font-weight: 500;
-}
-
-/* Closing of Section 3*/
+/* Closing of item grid section*/
 
 /* Opening of Section 4 */
 
-.sec4 {
-  margin-top: 180px;
-}
-.sec4-titlehead {
-  font-size: 44px;
-  font-weight: 600;
+.featured-projects-section {
   display: flex;
-  justify-content: center;
-  width: auto;
+  flex-direction: column;
+  gap: 120px;
+  margin-top: 180px;
 }
 
 /* opening of sec4-grp1 */
-.sec4-grp1 {
+.project-container {
   margin-top: 92px;
   display: flex;
   gap: 160px;
-  justify-content: space-around;
-  margin-bottom: 160px;
-  margin-left: 12em;
-  margin-right: 12em;
+  justify-content: center;
+  margin: 0 auto;
 }
 
-.sec4grp1-cnt {
+.project-description-container {
   margin-top: 60px;
 }
-.sec4grp1-subhead {
+.project-description-subheading {
   font-size: 20px;
 }
 
-.sec4grp1-head {
+.project-description-heading {
   font-size: 32px;
   font-weight: 600;
   margin-top: 12px;
@@ -348,17 +252,17 @@ header {
   width: 416px;
 }
 
-.sec4grp1-body {
+.project-description-body {
   font-size: 16px;
   font-weight: 400;
   color: #666666;
-  width: 528px;
+  max-width: 440px;
   margin-bottom: 40px;
 }
 
-.sec4grp1-cta {
-  border: 1px solid #a4a4a4;
-  padding: 16px 28px;
+.project-description-button {
+  border: 1px solid #e2e2e2;
+  padding: 16px 24px;
   border-radius: 20px;
   background-color: #ffffff;
   cursor: pointer;
@@ -366,118 +270,14 @@ header {
   font-weight: 500;
 }
 
-.sec4grp1-img {
-  width: 460px;
-  height: 460px;
-  background-size: contain;
-  border-radius: 40px;
-}
-/* closing of sec4-grp1 */
-
-/* opening of sec4-grp2 */
-.sec4-grp2 {
-  margin-top: 92px;
-  display: flex;
-  gap: 160px;
-  justify-content: space-around;
-  margin-bottom: 160px;
-  margin-left: 12em;
-  margin-right: 12em;
-}
-
-.sec4grp2-cnt {
-  margin-top: 60px;
-}
-.sec4grp2-subhead {
-  font-size: 20px;
-}
-
-.sec4grp2-head {
-  font-size: 32px;
-  font-weight: 600;
-  margin-top: 12px;
-  margin-bottom: 32px;
-  width: 416px;
-}
-
-.sec4grp2-body {
-  font-size: 16px;
-  font-weight: 400;
-  color: #666666;
-  width: 528px;
-  margin-bottom: 40px;
-}
-
-.sec4grp2-cta {
-  border: 1px solid #a4a4a4;
-  padding: 16px 28px;
-  border-radius: 20px;
-  background-color: #ffffff;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.sec4grp2-img {
-  width: 460px;
-  height: 460px;
-  background-size: contain;
-  border-radius: 40px;
-}
-/* closing of sec4-grp2 */
-
-/* Opening of sec4-grp3 */
-.sec4-grp3 {
-  margin-top: 92px;
-  display: flex;
-  gap: 160px;
-  justify-content: space-around;
-  margin-bottom: 80px;
-  margin-left: 12em;
-  margin-right: 12em;
-}
-
-.sec4grp3-cnt {
-  margin-top: 60px;
-}
-.sec4grp3-subhead {
-  font-size: 20px;
-}
-
-.sec4grp3-head {
-  font-size: 32px;
-  font-weight: 600;
-  margin-top: 12px;
-  margin-bottom: 32px;
-  width: 416px;
-}
-
-.sec4grp3-body {
-  font-size: 16px;
-  font-weight: 400;
-  color: #666666;
-  width: 528px;
-  margin-bottom: 40px;
-}
-
-.sec4grp3-cta {
-  border: 1px solid #a4a4a4;
-  padding: 16px 28px;
-  border-radius: 20px;
-  background-color: #ffffff;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.sec4grp3-img {
+.project-image-container {
   width: 460px;
   height: 460px;
   background-size: contain;
   border-radius: 40px;
 }
 
-.View-Cta {
+.project-container-button {
   display: flex;
   border: none;
   padding: 16px 28px;
@@ -485,7 +285,7 @@ header {
   background-color: #1994ed;
   color: #ffffff;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   width: auto;
   margin: auto;
@@ -704,7 +504,7 @@ header {
   border: none;
   padding: 16px 28px;
   border-radius: 20px;
-  background-color: #121212;
+  background-color: #1d85ff;
   color: #ffffff;
   cursor: pointer;
   font-size: 16px;

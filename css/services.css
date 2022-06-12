@@ -105,6 +105,10 @@ header {
   margin-inline: auto;
 }
 
+.services-video {
+  max-width: 1000px;
+}
+
 /* closing of video container */
 
 /* opening of what we do */
@@ -296,7 +300,7 @@ header {
 
 .footer {
   margin-top: 160px;
-  height: 360px;
+  height: 280px;
 }
 .footer-columns-all {
   display: flex;
