@@ -77,21 +77,35 @@ header {
 /* opening of img container */
 
 .img-container {
-  background-image: url("/Images/about/heading-img.png");
-  height: 520px;
-  margin-top: 60px;
-  background-size: cover;
-  margin-left: 12em;
-  margin-right: 12em;
+  width: 80%;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+}
+.img-heading {
+  font-size: 56px;
+  font-weight: 600;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: auto;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+.about-img {
+  height: 100%;
+  width: 100%;
   border-radius: 40px;
-  background-size: cover;
 }
 
 /* closing of img-container */
 
 /* opening of vision */
 
-.vision {
+.about-section {
   margin-top: 120px;
   display: flex;
   justify-content: center;
@@ -99,12 +113,12 @@ header {
   flex-direction: column;
 }
 
-.vision-heading {
+.about-section-heading {
   font-size: 44px;
   font-weight: 600;
 }
 
-.vision-body {
+.about-section-body {
   font-size: 20px;
   font-weight: 400;
   color: #666666;
@@ -149,25 +163,24 @@ header {
 
 /* opening of achievements */
 
-.achievements {
+.achievements-section {
   display: flex;
   justify-content: center;
   gap: 160px;
   align-items: center;
-  height: 320px;
-  background-color: #e8e8e8;
-  margin-top: 180px;
-  margin-bottom: 80px;
+  height: 280px;
+  margin-top: 120px;
+  margin-bottom: 120px;
 }
 
-.achievements-groups {
+.achievements-container {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
 .achievements-info {
-  font-size: 48px;
+  font-size: 56px;
   font-weight: 600;
 }
 
@@ -223,7 +236,7 @@ header {
 /* closing of team */
 
 /* opening of get in touch */
-.getintouch {
+.getintouch-section {
   margin-top: 160px;
   width: 1224px;
   height: 420px;
@@ -236,37 +249,43 @@ header {
   gap: 160px;
 }
 
-.getintouch-body {
+.getintouch-container {
   display: flex;
   flex-direction: column;
-  align-items: left;
 }
-.getintouch-hireus {
+
+.getintouch-subheading {
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 0.2em;
+  max-width: fit-content;
 }
 
 .getintouch-heading {
   font-size: 44px;
   font-weight: 600;
-  width: 568px;
   margin-bottom: 32px;
 }
 
-.getintouch-cta {
+.getintouch-button {
   display: flex;
   border: none;
   padding: 16px 28px;
   border-radius: 20px;
-  background-color: #1d85ff;
   color: #ffffff;
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
-  width: fit-content;
-  align-items: left;
-  justify-content: center;
+  max-width: fit-content;
+  align-items: flex-start;
+  background-image: linear-gradient(to top, #0868d8 50%, #1d85ff 50%);
+  background-size: 100% 200%;
+  background-position: 0% 0%;
+  transition: all 0.3s ease 0s;
+}
+
+.getintouch-button:hover {
+  background-position: 0% 100%;
 }
 
 .getintouch-img {
