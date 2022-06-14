@@ -128,14 +128,17 @@ header {
 }
 
 .section-image-container {
-  background-image: url("/Images/main.jpg");
-  /* background-attachment: fixed; */
-  height: 460px;
+  background-image: url(/Images/main.jpg);
+  background-attachment: fixed;
+  height: 540px;
+  margin-top: 80px;
+  border-radius: 40px;
+  max-width: 1200px;
+  justify-content: center;
+  margin: auto;
   margin-top: 80px;
   background-size: cover;
-  margin-left: 12em;
-  margin-right: 12em;
-  border-radius: 40px;
+  background-repeat: no-repeat;
 }
 /* closing of intro*/
 
@@ -152,10 +155,10 @@ header {
 }
 
 .item-grid-img {
-  background-image: url("/Images/idea.png");
   width: 440px;
   height: 440px;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .item-grid-group {
@@ -292,19 +295,23 @@ header {
   border: none;
   padding: 16px 28px;
   border-radius: 20px;
-  background-color: #1994ed;
-  color: #ffffff;
+  border: 1px solid #e2e2e2;
+  color: #1d85ff;
   cursor: pointer;
   font-size: 18px;
   font-weight: 500;
   margin: auto;
   margin-top: 80px;
-  transition: all 0.3s ease 0s;
+  background-image: linear-gradient(to top, #1d85ff 50%, transparent 50%);
+  background-size: 100% 200%;
+  background-position: 0% 0%;
+  background-color: #ffffff;
+  transition: all 0.2s ease 0s;
 }
 
 .project-container-button:hover {
-  background-color: #005695;
   color: #ffffff;
+  background-position: 0% 100%;
 }
 
 /* closing of section 4 group 3 */

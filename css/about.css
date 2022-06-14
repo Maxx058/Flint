@@ -197,7 +197,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 132px;
+  gap: 80px;
 }
 
 .team-member-image {
