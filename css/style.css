@@ -199,14 +199,16 @@ header {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  border: 1px solid;
-  border-color: #e2e2e2;
+  border: 1px solid #e2e2e2;
   border-radius: 40px;
+  background-image: linear-gradient(to top, #e2e2e2 50%, #ffffff 50%);
+  background-size: 100% 200%;
+  background-position: 0% 0%;
   transition: all 0.3s ease 0s;
 }
 
 .services-button:hover {
-  background-color: #e2e2e2;
+  background-position: 0% 100%;
 }
 
 .services-button-icon {
@@ -271,16 +273,18 @@ header {
   border: 1px solid #e2e2e2;
   padding: 16px 24px;
   border-radius: 20px;
-  background-color: #ffffff;
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
+  background-image: linear-gradient(to top, #e2e2e2 50%, #ffffff 50%);
+  background-size: 100% 200%;
+  background-position: 0% 0%;
   transition: all 0.3s ease 0s;
 }
 
 .project-description-button:hover {
   border: 1px solid #e2e2e2;
-  background-color: #e2e2e2;
+  background-position: 0% 100%;
 }
 
 .project-image-container {
@@ -296,17 +300,17 @@ header {
   padding: 16px 28px;
   border-radius: 20px;
   border: 1px solid #e2e2e2;
-  color: #1d85ff;
+  color: #ffffff;
   cursor: pointer;
   font-size: 18px;
   font-weight: 500;
   margin: auto;
   margin-top: 80px;
-  background-image: linear-gradient(to top, #1d85ff 50%, transparent 50%);
+  background-image: linear-gradient(to top, #0868d8 50%, #1d85ff 50%);
   background-size: 100% 200%;
   background-position: 0% 0%;
-  background-color: #ffffff;
-  transition: all 0.2s ease 0s;
+  transition: all 0.3s ease 0s;
+  width: fit-content;
 }
 
 .project-container-button:hover {
