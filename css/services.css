@@ -80,18 +80,10 @@ header {
 
 /* opening of Section 1 */
 
-.head-intro {
-  margin-top: 56px;
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
 .heading {
-  margin-top: 12px;
+  margin-top: 80px;
   font-size: 48px;
   font-weight: 600;
-  width: 400px;
   text-align: center;
 }
 
@@ -100,8 +92,7 @@ header {
 /* opening of video container */
 .video-container {
   max-width: 1000px;
-  background-attachment: fixed;
-  margin-top: 80px;
+  margin-top: 120px;
   background-size: cover;
   margin-inline: auto;
 }
@@ -117,7 +108,7 @@ header {
 .whatwedo {
   display: flex;
   flex-direction: row;
-  gap: 180px;
+  gap: 120px;
   justify-content: center;
   align-items: center;
   margin-top: 120px;
@@ -125,13 +116,13 @@ header {
 .whatwedo-heading {
   font-size: 40px;
   font-weight: 600;
-  width: 132px;
+  max-width: 132px;
 }
 
 .whatwedo-body {
   font-size: 20px;
   color: #666666;
-  width: 620px;
+  max-width: 620px;
 }
 /* closing of what we do */
 
@@ -153,7 +144,7 @@ header {
   text-align: center;
 }
 
-.service-briefs-item {
+.service-briefs-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -161,29 +152,29 @@ header {
   gap: 120px;
 }
 
-.service-item-image {
+.service-container-image {
   width: 524px;
   height: 326px;
   border-radius: 20px;
 }
 
-.service-item-textgrp {
+.service-container-description {
   justify-content: center;
 }
 
-.service-item-heading {
+.service-description-heading {
   font-size: 24px;
   font-weight: 600;
   padding-bottom: 16px;
 }
 
-.service-item-body {
+.service-description-body {
   font-size: 18px;
   color: #868686;
   width: 440px;
 }
 
-.service-item-cta {
+.service-description-button {
   border: 1px solid #a4a4a4;
   padding: 12px 24px;
   border-radius: 20px;
@@ -212,14 +203,14 @@ header {
   font-size: 44px;
   font-weight: 600;
   text-align: center;
-  margin-bottom: 128px;
 }
 
-.working-benefits-itemgroup {
+.working-benefits-container {
   display: grid;
   grid-template-columns: repeat(2, 460px);
   justify-content: center;
   gap: 120px;
+  margin-top: 120px;
 }
 
 /* .working-benefits-item {

@@ -76,10 +76,11 @@ header {
 
 /* opening of img container */
 
-.img-container {
-  width: 80%;
+.about-img-container {
+  max-width: 1200px;
   position: relative;
-  margin: 0 auto;
+  margin: auto;
+  margin-top: 80px;
   text-align: center;
 }
 .img-heading {
@@ -93,12 +94,14 @@ header {
   justify-content: center;
   width: 100%;
   text-align: center;
+  transform: translate(-50%, -50%);
 }
 
 .about-img {
   height: 100%;
   width: 100%;
   border-radius: 40px;
+  filter: brightness(0.8);
 }
 
 /* closing of img-container */
@@ -123,7 +126,7 @@ header {
   font-weight: 400;
   color: #666666;
   margin-top: 20px;
-  width: 960px;
+  max-width: 960px;
   text-align: center;
 }
 
@@ -131,15 +134,14 @@ header {
 
 /* opening of img-container-2 */
 
-.img-container-2 {
+.about-img-container-2 {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 104px;
-  margin-top: 160px;
   height: 420px;
-  margin-left: 12em;
-  margin-right: 12em;
+  margin: auto;
+  margin-top: 120px;
 }
 
 .img-container-2-item1 {
@@ -168,9 +170,9 @@ header {
   justify-content: center;
   gap: 160px;
   align-items: center;
-  height: 280px;
-  margin-top: 120px;
-  margin-bottom: 120px;
+  height: 220px;
+  margin-top: auto;
+  margin-top: 80px;
 }
 
 .achievements-container {
@@ -192,12 +194,12 @@ header {
 /* closing of achievements */
 
 /* opening of team */
-.team {
+.team-section {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 180px;
+  margin-top: 160px;
   gap: 80px;
 }
 
@@ -206,7 +208,7 @@ header {
   font-weight: 600;
 }
 
-.team-group {
+.team-container {
   display: flex;
   justify-content: center;
   align-items: center;
