@@ -107,7 +107,6 @@ header {
 }
 
 .project-column-1 {
-  justify-content: center;
   display: flex;
   gap: 80px;
   flex-direction: column;
@@ -129,10 +128,16 @@ header {
 }
 
 .project-img {
-  max-width: 580px;
+  width: 520px;
+  border-radius: 20px;
+  align-items: center;
+}
+
+.project-img-container {
+  overflow: hidden;
+  max-width: 420px;
   max-height: 480px;
   border-radius: 20px;
-  background-size: cover;
 }
 
 .project-description {
