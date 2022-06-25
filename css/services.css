@@ -92,7 +92,7 @@ header {
 /* opening of video container */
 .video-container {
   max-width: 1000px;
-  margin-top: 120px;
+  margin-top: 96px;
   background-size: cover;
   margin-inline: auto;
 }
@@ -132,9 +132,9 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 180px;
+  margin-top: 160px;
   flex-direction: column;
-  gap: 120px;
+  gap: 96px;
 }
 
 .service-briefs-heading {
@@ -146,44 +146,67 @@ header {
 
 .service-briefs-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
   gap: 120px;
 }
 
-.service-container-image {
-  width: 524px;
-  height: 326px;
+.service-image {
+  background-size: cover;
+  max-width: 440px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.service-image:hover {
+  transform: scale(1.3);
+}
+
+.service-image-container {
+  overflow: hidden;
+  max-width: 420px;
+  max-height: 380px;
   border-radius: 20px;
 }
 
 .service-container-description {
   justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
 }
 
 .service-description-heading {
   font-size: 24px;
   font-weight: 600;
-  padding-bottom: 16px;
 }
 
 .service-description-body {
   font-size: 18px;
-  color: #868686;
-  width: 440px;
+  color: #666;
+  max-width: 440px;
 }
 
 .service-description-button {
-  border: 1px solid #a4a4a4;
-  padding: 12px 24px;
+  border: 1px solid #e2e2e2;
+  padding: 16px 32px;
   border-radius: 20px;
-  background-color: #ffffff;
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
-  border-color: #c2c2c2;
-  margin-top: 24px;
+  background-image: linear-gradient(to top, #e2e2e2 50%, #ffffff 50%);
+  background-size: 100% 200%;
+  background-position: 0% 0%;
+  transition: all 0.3s ease 0s;
+  margin-top: 12px;
+}
+
+.service-description-button:hover {
+  border: 1px solid #e2e2e2;
+  background-position: 0% 100%;
 }
 
 /* closing of service briefs */
@@ -233,7 +256,7 @@ header {
 /* closing of working benefits */
 
 /* opening of get in touch */
-.getintouch {
+.getintouch-section {
   margin-top: 160px;
   width: 1224px;
   height: 420px;
@@ -246,37 +269,43 @@ header {
   gap: 160px;
 }
 
-.getintouch-body {
+.getintouch-container {
   display: flex;
   flex-direction: column;
-  align-items: left;
 }
-.getintouch-hireus {
+
+.getintouch-subheading {
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 0.2em;
+  max-width: fit-content;
 }
 
 .getintouch-heading {
   font-size: 44px;
   font-weight: 600;
-  width: 568px;
   margin-bottom: 32px;
 }
 
-.getintouch-cta {
+.getintouch-button {
   display: flex;
   border: none;
   padding: 16px 28px;
   border-radius: 20px;
-  background-color: #121212;
   color: #ffffff;
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
-  width: fit-content;
-  align-items: left;
-  justify-content: center;
+  max-width: fit-content;
+  align-items: flex-start;
+  background-image: linear-gradient(to top, #0868d8 50%, #1d85ff 50%);
+  background-size: 100% 200%;
+  background-position: 0% 0%;
+  transition: all 0.3s ease 0s;
+}
+
+.getintouch-button:hover {
+  background-position: 0% 100%;
 }
 
 .getintouch-img {
@@ -292,16 +321,14 @@ header {
 
 .footer {
   margin-top: 160px;
-  height: 280px;
+  height: 360px;
 }
 .footer-columns-all {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
   gap: 140px;
   align-items: flex-start;
-  margin-left: 12em;
-  margin-right: 12em;
+  margin: auto;
 }
 .footer-flint-info {
   display: flex;
