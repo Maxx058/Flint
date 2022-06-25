@@ -21,7 +21,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 8%;
+  padding: 30px 10%;
 }
 
 .nav-area {
@@ -74,7 +74,7 @@ header {
 
 /* Closing of Navbar */
 
-.heading-container {
+.form-section {
   margin-top: 80px;
   display: flex;
   flex-direction: column;
@@ -83,17 +83,18 @@ header {
   margin-right: auto;
 }
 
-.section-heading {
+.form-section-heading {
   display: flex;
   justify-content: center;
   font-size: 44px;
   font-weight: 600;
-  margin-bottom: 80px;
+  margin-bottom: 120px;
 }
 
 /* opening of form */
 
 /* opening of type selector */
+
 .input-container-heading {
   font-size: 20px;
   font-weight: 600;
@@ -101,32 +102,34 @@ header {
   margin-bottom: 24px;
 }
 
-.project-type-selector-options {
+.project-selector-options {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
-.svcs1 {
+
+.selector-button {
   display: flex;
-  border-radius: 40px;
+  gap: 16px;
   padding: 16px 24px;
-  width: auto;
   align-items: center;
-  background-color: #ffffff;
-  border: 1px solid;
-  border-color: #c2c2c2;
   justify-content: center;
   cursor: pointer;
-}
-
-.svcs1-txt {
+  border: 1px solid #e2e2e2;
+  border-radius: 40px;
   font-size: 18px;
   font-weight: 500;
+  transition: all 0.3s ease 0s;
+  background-color: #ffffff;
+}
+
+.selector-button:focus {
+  background-color: #e2e2e2;
 }
 
 /* closing of type selector */
 /* opening of inputs */
-.inputs {
+.inputs-container {
   display: flex;
   flex-direction: column;
 }
@@ -139,23 +142,36 @@ header {
   outline: none;
 }
 
-.inputs-container {
+.inputs-section {
   row-gap: 64px;
-}
-
-.primary-button {
   display: flex;
-  border-radius: 20px;
-  padding: 16px 32px;
-  align-items: center;
-  background-color: #1d85ff;
-  border: none;
-  color: #ffffff;
-  justify-content: center;
-  cursor: pointer;
-  margin: auto;
+  flex-direction: column;
+  margin-top: 80px;
 }
 
+.form-button {
+  display: flex;
+  border: none;
+  padding: 16px 28px;
+  border-radius: 20px;
+  border: 1px solid #e2e2e2;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  margin: auto;
+  margin-top: 32px;
+  background-image: linear-gradient(to top, #0868d8 50%, #1d85ff 50%);
+  background-size: 100% 200%;
+  background-position: 0% 0%;
+  transition: all 0.3s ease 0s;
+  width: fit-content;
+}
+
+.form-button:hover {
+  color: #ffffff;
+  background-position: 0% 100%;
+}
 /* closing of inputs */
 /* closing of form */
 
@@ -163,16 +179,14 @@ header {
 
 .footer {
   margin-top: 160px;
-  height: 280px;
+  height: 360px;
 }
 .footer-columns-all {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
   gap: 140px;
   align-items: flex-start;
-  margin-left: 12em;
-  margin-right: 12em;
+  margin: auto;
 }
 .footer-flint-info {
   display: flex;
