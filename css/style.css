@@ -300,7 +300,6 @@ header {
 .project-image {
   width: 460px;
   height: 460px;
-  background-size: contain;
   border-radius: 40px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
