@@ -1,163 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/form.css" />
-    <title>About us</title>
-  </head>
-  <body>
-    <!--Opening of Nav bar-->
-    <header>
-      <a href="index.html" class="logo" >FlinT.</a>
-      <nav>
-        <ul class="nav-area">
-          <li><a href="services.html">Services</a></li>
-          <li><a href="work.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-      </nav>
-      <a href="form.html"><button class="nav-cta">Get in Touch</button> </a>
-    </header>
 
-    <!--Closing of Nav bar-->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/form.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <title>Contact Us</title>
+</head>
 
-<!-- opening of form -->
-
-    <div class="form-section">
-      <p class="form-section-heading">let's build your dream project</p>
-
-      <!-- opening of type selector -->
-
-
-        <h2 class="input-container-heading">TYPE OF PROJECT</h2>
-      
-
-      <div class="project-selector-options">
-        <button class="selector-button">
-          <div class="selector-button-txt">Website from scratch</div>
+<body>
+  <!--Opening of Nav bar-->
+  <header>
+    <nav class="navbar navbar-expand-xl navbar-light p-0">
+      <div class="container-fluid">
+        <a href="index.html" class="navbar-brand align-items-baseline mt-2">FlinT.</a>
+        <button class="navbar-toggler hamburger" type="button" data-toggle="collapse" data-target="#main_nav"
+          aria-controls="main_nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-
-        <button class="selector-button">
-          <div class="selector-button-txt">App from scratch</div>
-        </button>
-
-        <button class="selector-button">
-          <div class="selector-button-txt">branding</div>
-        </button>
-
-        <button class="selector-button">
-          <div class="selector-button-txt">logo design</div>
-        </button>
-
-        <button class="selector-button">
-          <div class="selector-button-txt">website maintenance</div>
-        </button>
-
-        <button class="selector-button">
-          <div class="selector-button-txt">website development</div>
-        </button>
+        <div class="navbar-collapse collapse" id="main_nav">
+          <ul class="nav-area navbar-nav mx-auto flex-wrap align-items-xl-center align-items-start">
+            <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="work.html" class="nav-link">Work</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          </ul>
+          <li class="nav-item d-flex align-items-center p-xl my-md-2"> <a href="form.html"
+              class="nav-cta nav-link btn">Get in Touch</a></li>
+        </div>
       </div>
-    
+    </nav>
+  </header>
 
-      <!-- closing of type selector -->
+  <!--Closing of Nav bar-->
+
+  <!-- opening of form -->
+  <div class="container-fluid">
+  <div class="form-section">
+    <div class="row mx-auto">
+    <p class="form-section-heading col-12">Let's build your dream project</p></div>
+
+    <!-- opening of type selector -->
+
+    <div class="row mr-auto">
+    <h2 class="input-container-heading col-12">TYPE OF PROJECT</h2>
+    </div>
+
+    <div class="project-selector row mx-auto">
+    <div class="project-selector-options col-12 row mx-auto">
+      <div class="col-lg-4 col-md-4 col-sm-12 mx-auto">
+      <button class="selector-button">
+        <div class="selector-button-txt">Website from scratch</div>
+      </button></div>
+
+      <div class="col-lg-4 col-md-4 col-sm-12 mx-auto">
+      <button class="selector-button">
+        <div class="selector-button-txt">App from scratch</div>
+      </button></div>
+
+      <div class="col-lg-4 col-md-4 col-sm-12 mx-auto">
+      <button class="selector-button">
+        <div class="selector-button-txt">Website Maintenance</div>
+      </button></div>
+    </div>
+    <div class="project-selector-options col-12 row mx-auto">
+      <div class="col-lg-4 col-md-4 col-sm-12 mx-auto mt-3">
+      <button class="selector-button">
+        <div class="selector-button-txt">Website Development</div>
+      </button></div>
+
+      <div class="col-lg-4 col-md-4 col-sm-12 mx-auto">
+      <button class="selector-button">
+        <div class="selector-button-txt">Branding</div>
+      </button></div>
+
+      <div class="col-lg-4 col-md-4 col-sm-12 mx-auto">
+      <button class="selector-button">
+        <div class="selector-button-txt">Logo Design</div>
+      </button></div>
+    </div>
+    </div>
+    </div>
+
+
+    <!-- closing of type selector -->
 
     <!-- opening of inputs -->
-
-    <div class=" inputs-section">
-      <div class="inputs-container">
+    <div class="inputs-section row mx-auto">
+      <div class="inputs-container col-12 mx-auto">
         <h2 class="input-container-heading">YOUR NAME</h2>
         <input type="text" placeholder="Your Name" class="input-field" />
       </div>
 
-      <div class="inputs-container">
+      <div class="inputs-container col-12 mx-auto">
         <h2 class="input-container-heading">YOUR EMAIL</h2>
         <input type="text" placeholder="Your Email" class="input-field" />
       </div>
 
-      <div class="inputs-container">
+      <div class="inputs-container col-12 mx-auto">
         <h2 class="input-container-heading">PROJECT BRIEF</h2>
-        <textarea
-          placeholder="Project Details"
-          class="input-field"
-          rows="3"
-        ></textarea>
+        <textarea placeholder="Project Details" class="input-field" rows="3"></textarea>
       </div>
 
-      <div class="inputs-container">
+      <div class="inputs-container col-12 mx-auto">
         <h2 class="input-container-heading">YOUR BUDGET</h2>
         <input type="text" placeholder="Project Budget" class="input-field" />
       </div>
 
-      <button class="form-button">
+      <button class="form-button mx-auto">
         Submit Details
       </button>
     </div>
-    </div>
+  </div>
+  <!-- closing of inputs -->
 
-    <!-- closing of inputs -->
+  <!-- closing of form -->
 
-      <!-- closing of form -->
+  <!-- opening of Footer -->
+  <div class="container-fluid">
+    <div class="footer">
 
-      <!-- opening of Footer -->
-      <div class="footer">
-        <div class="footer-columns-all">
-
-           <div class="footer-flint-info">
+      <div class="footer-columns-all row ml-2">
+        <div class="col-xl-3 col-lg-3 row">
+          <div class="footer-flint-info col-md-12 col-sm-12 mx-2">
+            <div>
               <h2 class="footer-logo">FlinT <br>Studio</h2>
-              <div class="footer-info-group-all">
+            </div>
+            <div class="footer-info-group-all">
+              <div class="footer-info-group"><img class="footer-info-group-icon" src="/Images/footermailicon.svg"></img>
+                <p class="footer-info-group-text">Enquiry@FlinT.com</p>
+              </div>
 
-                <div class="footer-info-group"><img class="footer-info-group-icon" src="/Images/footermailicon.svg"></img>
-                <p class="footer-info-group-text">Enquiry@FlinTStudio.com</p></div>
-        
-                <div class="footer-info-group"><img class="footer-info-group-icon" src="/Images/footerlocationicon.svg"></img>
-               <p class="footer-info-group-text">Mumbai,India</p></div>
+              <div class="footer-info-group"><img class="footer-info-group-icon"
+                  src="/Images/footerlocationicon.svg"></img>
+                <p class="footer-info-group-text">Mumbai, India</p>
+              </div>
 
-             </div> 
-          </div>
-        
-           <div class="footer-columns">
-              <h4 class="footer-column-title">PAGES</h4>
-              <div class="footer-column-items-all">
-
-            <a class="footer-column-items" href="about.html">About</a>
-            <a class="footer-column-items" href="work.html">Work</a>
-            <a class="footer-column-items" href="services.html">Services</a>
-
-          </div>
-          </div>
-        
-
-        
-            <div class="footer-columns">
-              <h4 class="footer-column-title">PROJECTS</h4>
-              <div class="footer-column-items-all">
-
-              <a class="footer-column-items" href="#">Terms</a>
-              <a class="footer-column-items" href="#">Privacy Policy</a>
-            
             </div>
           </div>
-
-          <div class="footer-columns">
-              <h4 class="footer-column-title">FOLLOW US</h4>
-              <div class="footer-column-items-all">
-
-              <a class="footer-column-items" href="https://www.facebook.com">Facebook</a>
-              <a class="footer-column-items" href="https://www.Instagram.com">Instagram</a>
-              <a class="footer-column-items" href="https://www.youtube.com">Youtube</a>
-            
-            </div>
-          </div>
-          
         </div>
 
+        <div class="footer-columns col-xl-3 col-lg-3 col-md-4 row">
+          <div class="col-sm-6">
+            <h4 class="footer-column-title">PAGES</h4>
+            <div class="footer-column-items-all">
+              <a class="footer-column-items" href="./about.html">About</a>
+              <a class="footer-column-items" href="./project.html">Products</a>
+              <a class="footer-column-items" href="./work.html">Work</a>
+              <a class="footer-column-items" href="./services.html">Services</a>
+            </div>
+          </div>
+        </div>
 
-       </div>
-    </div> 
-    <!-- closing of footer -->
+        <div class="footer-columns col-xl-3 col-lg-3 col-md-4 row">
+          <div class="col-sm-6">
+            <h4 class="footer-column-title">PROJECTS</h4>
+            <div class="footer-column-items-all">
+              <a class="footer-column-items" href="#">Terms</a>
+              <a class="footer-column-items" href="#">Privacy Policy</a>
+            </div>
+          </div>
+        </div>
 
+        <div class="footer-columns col-xl-3 col-lg-3 col-md-4 row">
+          <div class="col-sm-6">
+            <h4 class="footer-column-title">FOLLOW US</h4>
+            <div class="footer-column-items-all">
+              <a class="footer-column-items" href="#">Facebook</a>
+              <a class="footer-column-items" href="#">Instagram</a>
+              <a class="footer-column-items" href="#">Youtube</a>
+            </div>
+          </div>
+        </div>
 
-  </body>
+        <div class="row">
+          <div class="footer-columns col-xl-12 col-lg-12 mb-5">
+            <div class="col-md-12 col-sm-12">
+              <h4 class="footer-column-title-h4">© 2022 Copyright.Flint Studio</h4>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- closing of footer -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
