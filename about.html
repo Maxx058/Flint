@@ -1,38 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/about.css" />
-    <title>About us</title>
-  </head>
-  <body>
-    <!--Opening of Nav bar-->
-   <header>
-      <a href="index.html" class="logo" >FlinT.</a>
-      <nav>
-        <ul class="nav-area">
-          <li><a href="services.html">Services</a></li>
-          <li><a href="work.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-      </nav>
-      <a href="form.html"><button class="nav-cta">Get in Touch</button> </a>
-    </header>
 
-    <!--Closing of Nav bar-->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/about.css" />
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <title>About us</title>
+</head>
 
-    <div class="about-img-container"><img class="about-img" src="/images/about/heading-img.png"></img>
-    <div class="img-heading">Creativity Meets<br> Techology</div>
+<body>
+  <!--Opening of Nav bar-->
+  <header>
+    <nav class="navbar navbar-expand-xl navbar-light p-0">
+      <div class="container-fluid">
+        <a href="index.html" class="navbar-brand align-items-baseline mt-2">FlinT.</a>
+        <button class="navbar-toggler hamburger" type="button" data-toggle="collapse" data-target="#main_nav"
+          aria-controls="main_nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="main_nav">
+          <ul class="nav-area navbar-nav mx-auto flex-wrap align-items-xl-center align-items-start">
+            <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="work.html" class="nav-link">Work</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          </ul>
+          <li class="nav-item d-flex align-items-center p-xl my-md-2"> <a href="form.html"
+              class="nav-cta nav-link btn">Get in Touch</a></li>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--Closing of Nav bar-->
+  <div class="container-fluid">
+    <div class="">
+      <div class="about-img-container"><img class="about-img" src="./Images/about/heading-img.png"></img>
+        <div class="img-heading mx-auto">Creativity Meets<br> Techology</div>
+      </div>
     </div>
+  </div>
 
-    <!-- opening of vision -->
-
-    <div class="about-section">
-      <p class="about-section-heading">About Flint</p>
-
-      <p class="about-section-body">
+  <!-- opening of vision -->
+  <div class="container-fluid">
+    <div class="about-section row">
+      <p class="about-section-heading mx-auto">About Flint</p>
+      <p class="about-section-body mx-auto">
         From the moment our company was founded, we have helped our clients find
         exceptional solutions for their businesses , creating memorable brands
         and digital products. Our expertise grows with each year, and our
@@ -40,19 +59,23 @@
         should be.
       </p>
     </div>
+  </div>
 
-    <!-- closing of vision -->
+  <!-- closing of vision -->
 
-    <!-- opening of img-container-2 -->
-    <div class="about-img-container-2">
-      <div class="img-container-2-item1"></div>
-      <div class="img-container-2-item2"></div>
+  <!-- opening of img-container-2 -->
+  <div class="container-fluid">
+    <div class="about-img-container-2 row d-flex mx-4">
+      <div class="img-container-2-item1 mr-auto col-xl-5 col-lg-5 col-md-5 col-sm-12 mx-auto"></div>
+      <div class=""></div>
+      <div class="img-container-2-item2 col-xl-5 col-lg-5 col-md-5 col-sm-12 ml-auto mx-auto"></div>
     </div>
+  </div>
 
-    <!-- closing of img-container-2 -->
+  <!-- closing of img-container-2 -->
 
-    <!-- opening of achievements -->
-    <div class="achievements-section">
+  <!-- opening of achievements -->
+  <!-- <div class="achievements-section">
       <div class="achievements-container">
         <h2 class="achievements-info">40+</h2>
         <p class="achievements-name">Projects</p>
@@ -67,15 +90,47 @@
         <h2 class="achievements-info">4+ Years</h2>
         <p class="achievements-name">of Experience</p>
       </div>
+    </div> -->
+  <div class="container-fluid mx-auto">
+    <div id="projectFacts" class="sectionClass">
+      <div class="fullWidth eight columns">
+        <div class="projectFactsWrap ">
+          <div class="item wow fadeInUpBig animated animated" data-number="12" style="visibility: visible;">
+            <i class="fa fa-briefcase"></i>
+            <p id="number1" class="number">12</p>
+            <span></span>
+            <p>Projects done</p>
+          </div>
+          <div class="item wow fadeInUpBig animated animated" data-number="55" style="visibility: visible;">
+            <i class="fa fa-smile-o"></i>
+            <p id="number2" class="number">55</p>
+            <span></span>
+            <p>Happy clients</p>
+          </div>
+          <div class="item wow fadeInUpBig animated animated" data-number="359" style="visibility: visible;">
+            <i class="fa fa-coffee"></i>
+            <p id="number3" class="number">359</p>
+            <span></span>
+            <p>Cups of coffee</p>
+          </div>
+          <div class="item wow fadeInUpBig animated animated" data-number="246" style="visibility: visible;">
+            <i class="fa fa-camera"></i>
+            <p id="number4" class="number">246</p>
+            <span></span>
+            <p>Memories made</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- closing of achievements -->
+  </div>
+  <!-- closing of achievements -->
 
-    <!-- opening of company info -->
-    
-    <div class="about-section">
-      <p class="about-section-heading">we dare what others don't.</p>
+  <!-- opening of company info -->
 
-      <p class="about-section-body">
+  <div class="container-fluid">
+    <div class="about-section row">
+      <p class="about-section-heading mx-5 justify-content-center">We dare what others don't.</p>
+      <p class="about-section-body mx-5">
         From the moment our company was founded, we have helped our clients find
         exceptional solutions for their businesses , creating memorable brands
         and digital products. Our expertise grows with each year, and our
@@ -83,167 +138,229 @@
         should be.
       </p>
     </div>
+  </div>
+  <!-- closing of company info -->
 
-    <!-- closing of company info -->
+  <!-- opening of team -->
 
-    <!-- opening of team -->
-
-    <div class="team-section">
-      <h1 class="team-heading">Meet the Team</h1>
-
-      <div class="team-container">
-        <div class="team-member">
-          <img
-            class="team-member-image"
-            src="/Images/about/member.png"
-            alt="#"
-          />
-          <h4 class="team-member-name">Mark Wart</h4>
-          <p class="team-member-designation">Chief of Design</p>
+  <div class="team-section container-fluid">
+    <h1 class="team-heading mx-auto">Meet the Team</h1>
+    <div class="team-container justify-content-between">
+      <div class="row d-flex mx-auto">
+        <div class="team-member col-lg-3 col-md-3 col-sm-6 mx-auto">
+          <div class="col mx-auto"><img class="team-member-image mx-auto" src="/Images/about/member.png" alt="#" />
+          </div>
+          <div class="col mx-auto">
+            <h4 class="team-member-name mx-auto">Mark Wart</h4>
+            <p class="team-member-designation mx-auto">Chief of Design</p>
+          </div>
         </div>
 
-        <div class="team-member">
-          <img
-            class="team-member-image"
-            src="/Images/about/albert.png"
-            alt="#"
-          />
-          <h4 class="team-member-name">Albert Dera</h4>
-          <p class="team-member-designation">Art Director</p>
+        <div class="team-member col-lg-3 col-md-3 col-sm-6 mx-auto">
+          <div class="col mx-auto">
+            <img class="team-member-image" src="/Images/about/albert.png" alt="#" />
+          </div>
+          <div class="col mx-auto">
+            <h4 class="team-member-name">Albert Dera</h4>
+            <p class="team-member-designation">Art Director</p>
+          </div>
         </div>
 
-        <div class="team-member">
-          <img
-            class="team-member-image"
-            src="/Images/about/austin.png"
-            alt="#"
-          />
-          <h4 class="team-member-name">Austin Wade</h4>
-          <p class="team-member-designation">Creative Director</p>
+        <div class="team-member col-lg-3 col-md-3 col-sm-6 mx-auto">
+          <div class="col mx-auto">
+            <img class="team-member-image" src="/Images/about/austin.png" alt="#" />
+          </div>
+          <div class="col mx-auto">
+            <h4 class="team-member-name">Austin Wade</h4>
+            <p class="team-member-designation">Creative Director</p>
+          </div>
         </div>
 
-        <div class="team-member">
-          <img class="team-member-image" src="/Images/about/ben.png" alt="#" />
-          <h4 class="team-member-name">Ben Braw</h4>
-          <p class="team-member-designation">Lead Engineer</p>
-        </div>
-      </div>
-
-      <div class="team-container">
-        <div class="team-member">
-          <img
-            class="team-member-image"
-            src="/Images/about/priscilla.png"
-            alt="#"
-          />
-          <h4 class="team-member-name">Priscilla Preez</h4>
-          <p class="team-member-designation">Experience Designer</p>
-        </div>
-
-        <div class="team-member">
-          <img
-            class="team-member-image"
-            src="/Images/about/Taylor.png"
-            alt="#"
-          />
-          <h4 class="team-member-name">Taylor Deas</h4>
-          <p class="team-member-designation">Product Manager</p>
-        </div>
-
-        <div class="team-member">
-          <img
-            class="team-member-image"
-            src="/Images/about/jessica.png"
-            alt="#"
-          />
-          <h4 class="team-member-name">Jessica Felicio</h4>
-          <p class="team-member-designation">Sr. Graphic Director</p>
-        </div>
-
-        <div class="team-member">
-          <img
-            class="team-member-image"
-            src="/Images/about/joseph.png"
-            alt="#"
-          />
-          <h4 class="team-member-name">Joseph Cage</h4>
-          <p class="team-member-designation">Marketing Lead</p>
+        <div class="team-member col-lg-3 col-md-3 col-sm-6 mx-auto">
+          <div class="col mx-auto">
+            <img class="team-member-image" src="/Images/about/ben.png" alt="#" />
+          </div>
+          <div class="col mx-auto">
+            <h4 class="team-member-name">Ben Braw</h4>
+            <p class="team-member-designation">Lead Engineer</p>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- closing of teams -->
-
-    <!-- opening of Get in Touch -->
-
-      <div class="getintouch-section">
-        <div class="getintouch-container">
-          <p class="getintouch-subheading">HIRE US</p>
-          <h1 class="getintouch-heading">Have a Project in Mind?<br> Lets Talk</h1>
-          <button class="getintouch-button">Get in Touch</button>
+    <div class="team-container justify-content-between">
+      <div class="row d-flex mx-auto">
+        <div class="team-member col-lg-3 col-md-3 col-sm-6 mx-auto">
+          <div class="col mx-auto"><img class="team-member-image mx-auto" src="/Images/about/member.png" alt="#" />
+          </div>
+          <div class="col mx-auto">
+            <h4 class="team-member-name mx-auto">Mark Wart</h4>
+            <p class="team-member-designation mx-auto">Chief of Design</p>
+          </div>
         </div>
-        <div class="getintouch-img"></div>
+
+        <div class="team-member col-lg-3 col-md-3 col-sm-6 mx-auto">
+          <div class="col mx-auto">
+            <img class="team-member-image" src="/Images/about/albert.png" alt="#" />
+          </div>
+          <div class="col mx-auto">
+            <h4 class="team-member-name">Albert Dera</h4>
+            <p class="team-member-designation">Art Director</p>
+          </div>
+        </div>
+
+        <div class="team-member col-lg-3 col-md-3 col-sm-6 mx-auto">
+          <div class="col mx-auto">
+            <img class="team-member-image" src="/Images/about/austin.png" alt="#" />
+          </div>
+          <div class="col mx-auto">
+            <h4 class="team-member-name">Austin Wade</h4>
+            <p class="team-member-designation">Creative Director</p>
+          </div>
+        </div>
+
+        <div class="team-member col-lg-3 col-md-3 col-sm-6 mx-auto">
+          <div class="col mx-auto">
+            <img class="team-member-image" src="/Images/about/ben.png" alt="#" />
+          </div>
+          <div class="col mx-auto">
+            <h4 class="team-member-name">Ben Braw</h4>
+            <p class="team-member-designation">Lead Engineer</p>
+          </div>
+        </div>
       </div>
+    </div>
 
-      <!-- closing of get in touch -->
+  </div>
 
-      <!-- opening of Footer -->
-      <div class="footer">
-        <div class="footer-columns-all">
+  <!-- closing of teams -->
 
-           <div class="footer-flint-info">
+  <!-- opening of Get in Touch -->
+  <div class="container-fluid align-items-center mx-auto">
+    <div class="getintouch-section">
+      <div class="row">
+        <div class="getintouch-container mx-auto col-xl-6 col-md-6 col-sm-12">
+          <div class="row">
+            <h5 class="getintouch-subheading">HIRE US</h5>
+            <h1 class="getintouch-heading col-xl-12 col-sm-12">Have a Project in Mind?<br> Lets Talk</h1>
+            <div><button class="getintouch-button">Get in Touch</button></div>
+          </div>
+        </div>
+        <div class="getintouch-img mx-auto col-xl-6 col-md-6 col-sm-12"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- closing of get in touch -->
+
+  <!-- opening of Footer -->
+  <div class="container-fluid">
+    <div class="footer">
+      <div class="footer-columns-all row ml-2">
+        <div class="col-xl-3 col-lg-3 row">
+          <div class="footer-flint-info col-md-12 col-sm-12 mx-2">
+            <div>
               <h2 class="footer-logo">FlinT <br>Studio</h2>
-              <div class="footer-info-group-all">
+            </div>
+            <div class="footer-info-group-all">
+              <div class="footer-info-group"><img class="footer-info-group-icon" src="/Images/footermailicon.svg"></img>
+                <p class="footer-info-group-text">Enquiry@FlinT.com</p>
+              </div>
 
-                <div class="footer-info-group"><img class="footer-info-group-icon" src="/Images/footermailicon.svg"></img>
-                <p class="footer-info-group-text">Enquiry@FlinTStudio.com</p></div>
-        
-                <div class="footer-info-group"><img class="footer-info-group-icon" src="/Images/footerlocationicon.svg"></img>
-               <p class="footer-info-group-text">Mumbai,India</p></div>
+              <div class="footer-info-group"><img class="footer-info-group-icon"
+                  src="/Images/footerlocationicon.svg"></img>
+                <p class="footer-info-group-text">Mumbai, India</p>
+              </div>
 
-             </div> 
+            </div>
           </div>
-        
-           <div class="footer-columns">
-              <h4 class="footer-column-title">PAGES</h4>
-              <div class="footer-column-items-all">
+        </div>
 
-            <a class="footer-column-items" href="about.html">About</a>
-            <a class="footer-column-items" href="work.html">Work</a>
-            <a class="footer-column-items" href="services.html">Services</a>
-
+        <div class="footer-columns col-xl-3 col-lg-3 col-md-4 row">
+          <div class="col-sm-6">
+            <h4 class="footer-column-title">PAGES</h4>
+            <div class="footer-column-items-all">
+              <a class="footer-column-items" href="./about.html">About</a>
+              <a class="footer-column-items" href="./project.html">Products</a>
+              <a class="footer-column-items" href="./work.html">Work</a>
+              <a class="footer-column-items" href="./services.html">Services</a>
+            </div>
           </div>
-          </div>
-        
+        </div>
 
-        
-            <div class="footer-columns">
-              <h4 class="footer-column-title">PROJECTS</h4>
-              <div class="footer-column-items-all">
-
+        <div class="footer-columns col-xl-3 col-lg-3 col-md-4 row">
+          <div class="col-sm-6">
+            <h4 class="footer-column-title">PROJECTS</h4>
+            <div class="footer-column-items-all">
               <a class="footer-column-items" href="#">Terms</a>
               <a class="footer-column-items" href="#">Privacy Policy</a>
-            
             </div>
           </div>
-
-          <div class="footer-columns">
-              <h4 class="footer-column-title">FOLLOW US</h4>
-              <div class="footer-column-items-all">
-
-              <a class="footer-column-items" href="https://www.facebook.com">Facebook</a>
-              <a class="footer-column-items" href="https://www.Instagram.com">Instagram</a>
-              <a class="footer-column-items" href="https://www.youtube.com">Youtube</a>
-            
-            </div>
-          </div>
-          
         </div>
 
+        <div class="footer-columns col-xl-3 col-lg-3 col-md-4 row">
+          <div class="col-sm-6">
+            <h4 class="footer-column-title">FOLLOW US</h4>
+            <div class="footer-column-items-all">
+              <a class="footer-column-items" href="#">Facebook</a>
+              <a class="footer-column-items" href="#">Instagram</a>
+              <a class="footer-column-items" href="#">Youtube</a>
+            </div>
+          </div>
+        </div>
 
-       </div>
-    </div> 
-    <!-- closing of footer -->
-    
-  </body>
+        <div class="row">
+          <div class="footer-columns col-xl-12 col-lg-12 mb-5">
+            <div class="col-md-12 col-sm-12">
+              <h4 class="footer-column-title-h4">© 2022 Copyright.Flint Studio</h4>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- closing of footer -->
+  <script>
+    $.fn.jQuerySimpleCounter = function (options) {
+      var settings = $.extend({
+        start: 0,
+        end: 100,
+        easing: 'swing',
+        duration: 400,
+        complete: ''
+      }, options);
+
+      var thisElement = $(this);
+
+      $({ count: settings.start }).animate({ count: settings.end }, {
+        duration: settings.duration,
+        easing: settings.easing,
+        step: function () {
+          var mathCount = Math.ceil(this.count);
+          thisElement.text(mathCount);
+        },
+        complete: settings.complete
+      });
+    };
+
+
+    $('#number1').jQuerySimpleCounter({ end: 12, duration: 3000 });
+    $('#number2').jQuerySimpleCounter({ end: 55, duration: 3000 });
+    $('#number3').jQuerySimpleCounter({ end: 359, duration: 2000 });
+    $('#number4').jQuerySimpleCounter({ end: 246, duration: 2500 });
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
