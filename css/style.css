@@ -31,7 +31,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding: 30px 10%;
+  padding: 1.5% 4.5%;
+  flex:1;
 }
 
 .navbar-nav {
@@ -206,27 +207,38 @@ header {
 .item-grid {
   margin-top: 5em;
   display: flex;
-  justify-content: center !important;
+  justify-content: space-evenly !important;
   align-items: center;
+  margin-inline: auto;
 }
 
-.item-grid-img {
-  height: 25em !important;
+.item-grid-img{
+  height: 22em !important;
+  /* width:90%; */
   background-size: contain;
   background-repeat: no-repeat;
-  justify-content: center;
+  align-items: center;
+  justify-content: center !important;
+  margin: 2em 2em;
+  overflow: hidden;
+  /* display:inline-block; */
+}
+.item{
+  justify-content:center !important;
+  justify-self: center;
 }
 
 .item-grid-group {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 1.5em;
   margin-right: 1em !important;
 }
 
 .item-grid-group-heading {
-  font-size: 2.6em;
+  font-size: 2.2em;
   color: #121212;
   font-weight: 600;
 }
@@ -234,16 +246,17 @@ header {
 .item-grid-group-body {
   font-size: 1em;
   color: #666666;
-  width: 30em;
+  width: 90%;
   text-align: justify;
 }
 
 .services-button-container {
   display: flex;
   flex-direction: column;
-  width: auto;
+  width: 100%;
   margin-top: 2em;
-  gap: 2em;
+  margin-right: 1em;
+  /* gap: 2em; */
 }
 
 .services-button-container-row {
@@ -295,29 +308,33 @@ header {
 .all-projects-group-container {
   display: flex;
   flex-direction: column;
-  gap: 5em;
+  gap: 3em;
   margin-top: 2em;
 }
 
 .project-container {
   display: flex;
   justify-content: center !important;
-  margin: 2em 5em !important;
+  align-content: center;
+  margin: 1em 1em !important;
+  /* max-width: 95%; */
 }
 
 .project-description-container {
-  margin: 5em 0em 3em 1em;
+  margin: 2em 0em 2em 1em;
+  display: block;
+  align-content: center;
 }
 
 .project-description-subheading {
-  font-size: 1.5em;
-  margin-left: 1em;
+  font-size: 1.4em;
+  margin: 1.5em 0 0 1em;
 }
 
 .project-description-heading {
   font-size: 2.5em;
   font-weight: 600;
-  margin: 1em 1em 1em 0.5em;
+  margin: 0.5em 1em 0.5em 0.5em;
   width: 100%;
 }
 
@@ -349,12 +366,17 @@ header {
 }
 
 .project-image-container {
-  width: 28em;
-  height: 28em;
+  max-width: 25em;
+  height: 25em;
   background-size: contain;
   border-radius: 40px;
   justify-content: right !important;
   align-items: center !important;
+}
+@media screen and (max-width: 600px) {
+  .project-image-container {
+    max-width: 20em;
+    height: 20em; }
 }
 
 .project-container-button {
@@ -387,7 +409,8 @@ header {
 /* Opening of Testimonials */
 
 .testimonials-section {
-  margin-top: 220px;
+  margin-top: 7em;
+  max-width: 85%;
 }
 
 .testmonials-heading {
@@ -395,7 +418,7 @@ header {
   align-items: center;
   justify-content: center !important;
   gap: 40px;
-  margin-bottom: 80px;
+  margin-bottom: 4em;
 }
 
 .quote {
@@ -407,7 +430,7 @@ header {
 
 .testimonials-container {
   display: flex;
-  gap: 32px;
+  gap: 1.5em;
   justify-content: center;
   align-items: center;
 }
@@ -416,13 +439,13 @@ header {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  padding: 32px 32px;
+  padding: 1.5em;
   border-radius: 2em !important;
   border: 1px solid #e2e2e2;
 }
 
 .testimonial-card-body {
-  font-size: 18px;
+  font-size: 1.1em;
   font-weight: 500;
   max-width: 280px;
 }
@@ -443,12 +466,12 @@ header {
 }
 
 .testimonial-client-name {
-  font-size: 18px;
+  font-size: 1.3em;
   font-weight: 600;
 }
 
 .testimonial-person-designation {
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 400;
   color: #666666;
 }
@@ -484,7 +507,7 @@ header {
   transform: translateY(-50%) !important;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .card img {
     height: 11em;
   }
@@ -501,6 +524,7 @@ header {
   margin: auto;
   margin-top: 6em;
   justify-content: center;
+  max-width: 90%;
 }
 
 .store-container {
@@ -515,7 +539,7 @@ header {
 .store-product-card {
   display: flex;
   flex-direction: column;
-  max-width: 95%;
+  max-width: 90%;
   justify-content: center;
   gap: 2em;
 }
@@ -540,7 +564,7 @@ header {
 }
 
 .store-product-name {
-  font-size: 1.1em;
+  font-size: 1.3em;
   font-weight: 500;
   color: #666666;
   margin-bottom: 1em;
@@ -548,26 +572,26 @@ header {
 }
 
 .store-product-price {
-  font-size: 20px;
+  font-size: 1.2em;
   font-weight: 600;
   color: #121212;
 }
 
 .swiper {
-  width: 80%;
+  width: 90%;
   height: auto;
 }
 .MySwipper{
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   list-style: none;
   padding: 0;
   width: 100%;
   height: 100%;
   /* Fix of Webkit flickering */
-  z-index: 1;
+  z-index: 2;
 }
 .swiper-wrapper{
   position: relative;
@@ -591,7 +615,7 @@ header {
   width: calc(var(--swiper-navigation-size) / 44 * 27);
   height: var(--swiper-navigation-size);
   margin-top: calc(-1 * var(--swiper-navigation-size) / 2);
-  z-index: 1;
+  z-index: 2;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -623,13 +647,12 @@ header {
 .getintouch-section {
   margin-top: 8rem;
   width: 90%;
-  /* height: 420px; */
   border-radius: 40px;
   display: flex;
-  justify-content: center !important;
+  justify-content: space-evenly !important;
   align-items: center;
-  margin-left: 2em;
-  margin-right: 2em;
+  /* margin-left: 2em;
+  margin-right: 2em; */
   gap: 4em;
 }
 
@@ -641,7 +664,7 @@ header {
 }
 
 .getintouch-subheading {
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: 500;
   letter-spacing: 0.2em;
   max-width: fit-content;
@@ -657,7 +680,7 @@ header {
 .getintouch-button {
   display: flex;
   border: none;
-  padding: 16px 28px;
+  padding: 1.2em 1.5em;
   border-radius: 20px;
   background-color: #1d85ff;
   color: #ffffff;
@@ -675,7 +698,7 @@ header {
   width: 25em;
   height: 25em;
   background-repeat: no-repeat;
-  align-self: flex-end;
+  justify-content: flex-end;
 }
 
 /* closing of get in touch*/
