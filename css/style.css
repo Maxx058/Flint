@@ -548,6 +548,7 @@ header {
 @media (min-width: 768px) {
     .card img {
         height: 11em;
+        border-radius: 12px;
     }
 }
 

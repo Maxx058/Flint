@@ -38,6 +38,110 @@ const swiper = new Swiper(".swiper", {
 
 // cart js
 
+var username = localStorage.getItem('username');
+var email = localStorage.getItem('email');
+// implement save function that saves the data of username adn email from corresponding elements from modal
+function saveValues() {
+    username = document.getElementById('username').value;
+    email = document.getElementById('email').value;
+    localStorage.setItem('username', username);
+    localStorage.setItem('email', email);
+    $('#usernameEmailModal').modal('hide');
+    if (currentProd) {
+        shoppingCart.addItemToCart(currentProd.name, currentProd.price, currentProd.count);
+        displayCart();
+    }
+    // dismiss modal with id usernameEmailModal
+}
+// implmement function updateUsernameEmail, that takes username and email, and changes the value of variables username and email, and then saves them to localStorage
+function updateUsernameEmail(userVal, emailVal) {
+    console.log('updating values')
+    username = userVal;
+    email = emailVal;
+    localStorage.setItem('username', userVal);
+    localStorage.setItem('email', emailVal);
+    console.log(username, emailVal)
+}
+
+var currentProd = {};
+
+function handleOrder() {
+    console.log(shoppingCart.listCart());
+    var cartArray = shoppingCart.listCart();
+    var orderDetails = {
+        username: username,
+        email: email,
+        products: cartArray
+    }
+    hideModalUserModal();
+    showPostOrderModal();
+    // network post request with the orderDetails object
+    fetch('/api/orders', {
+            method: 'POST',
+            credentials: 'same-origin',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(orderDetails)
+        })
+        .then(response => response.json())
+        .then(data => {
+            updateCartId('');
+        })
+}
+
+// hidemodal function that hides the modal
+const hideModalUserModal = () => {
+    console.log('in hide')
+    $('#cart').modal('hide');
+
+}
+
+const showPostOrderModal = () => {
+    $('#postOrderModal').modal('show');
+}
+
+var cartId = '';
+
+// update cart id method that updates the cartId variable and then saves the value in local storage
+function updateCartId(id) {
+    cartId = id;
+    localStorage.setItem('cartId', id);
+}
+
+const updateCart = () => {
+    // network post request with the orderDetails object
+    var cartArray = shoppingCart.listCart();
+    if (cartId != '') {
+        var orderDetails = {
+            username: username,
+            email: email,
+            products: cartArray,
+            cart_idd: cartId
+        }
+    } else
+        var orderDetails = {
+            username: username,
+            email: email,
+            products: cartArray
+        }
+    console.log(orderDetails);
+    fetch('/api/orders', {
+            method: 'POST',
+            credentials: 'same-origin',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(orderDetails)
+        })
+        .then(response => response.json())
+        .then(data => {
+            updateCartId(data._id);
+        })
+}
+
+
+
 // ************************************************
 // Shopping Cart API
 // ************************************************
@@ -46,6 +150,14 @@ var shoppingCart = (function() {
     // =============================
     // Private methods and propeties
     // =============================
+
+
+
+    // function that shows a modal that has 2 inputs name and email
+    function showModal() {
+        $('#usernameEmailModal').modal('show');
+    }
+
     cart = [];
 
     // Constructor
@@ -76,6 +188,23 @@ var shoppingCart = (function() {
 
     // Add to cart
     obj.addItemToCart = function(name, price, count) {
+            // check for usename and email, and if not present, show modal
+            console.log('add to cart', username, email)
+            if (username == null || username == "" || email == null || email == "") {
+                console.log(username, email)
+                    // check for username against elements by id if present, then bypass modal showing
+
+                if (localStorage.getItem('username') != null && localStorage.getItem('email') != "" && localStorage.getItem('username') != null && localStorage.getItem('email') != "") {
+                    updateUsernameEmail(localStorage.getItem('username'), localStorage.getItem('email'));
+                } else {
+                    showModal();
+                    currentProd = { name: name, price: price, count: count };
+                    return;
+                }
+            } else {
+                currentProd = {};
+            }
+
             for (var item in cart) {
                 if (cart[item].name === name) {
                     cart[item].count++;
@@ -123,6 +252,7 @@ var shoppingCart = (function() {
 
     // Clear cart
     obj.clearCart = function() {
+        updateUsernameEmail("", "");
         cart = [];
         saveCart();
     }
@@ -187,6 +317,13 @@ $('.add-to-cart').click(function(event) {
     shoppingCart.addItemToCart(name, price, 1);
     displayCart();
 });
+
+function addToCart(event) {
+    var name = event.dataset.name;
+    var price = Number(event.dataset.price);
+    shoppingCart.addItemToCart(name, price, 1);
+    displayCart();
+}
 
 // Clear items
 $('.clear-cart').click(function() {

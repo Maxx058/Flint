@@ -2,202 +2,206 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/css/form.css" />
-  <link rel="stylesheet" href="/css/style.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <title>Contact Us</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/form.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Contact Us</title>
 </head>
 
 <body>
-  <!--Opening of Nav bar-->
-  <header>
-    <nav class="navbar navbar-expand-xl navbar-light p-0">
-      <div class="container-fluid">
-        <a href="index.html" class="navbar-brand align-items-baseline mt-2">FlinT.</a>
-        <button class="navbar-toggler hamburger" type="button" data-toggle="collapse" data-target="#main_nav"
-          aria-controls="main_nav" aria-expanded="false" aria-label="Toggle navigation">
+    <!--Opening of Nav bar-->
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-light p-0">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand align-items-baseline mt-2">FlinT.</a>
+                <button class="navbar-toggler hamburger" type="button" data-toggle="collapse" data-target="#main_nav" aria-controls="main_nav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="navbar-collapse collapse" id="main_nav">
-          <ul class="nav-area navbar-nav mx-auto flex-wrap align-items-xl-center align-items-start">
-            <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-            <li class="nav-item"><a href="work.html" class="nav-link">Work</a></li>
-            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-          </ul>
-          <li class="nav-item d-flex align-items-center p-xl my-md-2"> <a href="form.html"
-              class="nav-cta nav-link btn">Get in Touch</a></li>
-        </div>
-      </div>
-    </nav>
-  </header>
+                <div class="navbar-collapse collapse" id="main_nav">
+                    <ul class="nav-area navbar-nav mx-auto flex-wrap align-items-xl-center align-items-start">
+                        <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="work.html" class="nav-link">Work</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    </ul>
+                    <li class="nav-item d-flex align-items-center p-xl my-md-2"> <a href="form.html" class="nav-cta nav-link btn">Get in Touch</a></li>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-  <!--Closing of Nav bar-->
+    <!--Closing of Nav bar-->
 
-  <!-- opening of form -->
-  <div class="container-fluid">
-  <div class="form-section">
-    <div class="row mx-auto">
-    <p class="form-section-heading col-12">Let's build your dream project</p></div>
+    <!-- opening of form -->
+    <form class="container-fluid" id="queryForm">
+        <div class="form-section">
+            <div class="row mx-auto">
+                <p class="form-section-heading col-12">Let's build your dream project</p>
+            </div>
 
-    <!-- opening of type selector -->
+            <!-- opening of type selector -->
 
-    <div class="row mr-auto">
-    <h2 class="input-container-heading col-12">TYPE OF PROJECT</h2>
-    </div>
+            <div class="row mr-auto">
+                <h2 class="input-container-heading col-12">TYPE OF PROJECT</h2>
+            </div>
 
-    <div class="project-selector row mx-auto">
-    <div class="project-selector-options col-12 row mx-auto">
-      <div class="col-lg-4 col-md-4 col-sm-12 mx-auto">
-      <button class="selector-button">
+            <div class="project-selector row mx-auto">
+                <div class="project-selector-options col-12 row mx-auto">
+                    <div class="col-lg-4 col-md-4 col-sm-12 mx-auto">
+                        <input class="d-none radio-buttons " type="checkbox" name="typeOfProject" id="websiteFromScratch" data-value="websiteFromScratch">
+                        <label class="selector-button" for="websiteFromScratch">
         <div class="selector-button-txt">Website from scratch</div>
-      </button></div>
+      </label>
+                    </div>
 
-      <div class="col-lg-4 col-md-4 col-sm-12 mx-auto">
-      <button class="selector-button">
-        <div class="selector-button-txt">App from scratch</div>
-      </button></div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 mx-auto">
+                        <input class="d-none radio-buttons " type="checkbox" name="typeOfProject" id="appFromScratch" data-value="appFromScratch">
+                        <label class="selector-button" for="appFromScratch">
+                        <div class="selector-button-txt">App from scratch</div>
+      </label>
+                    </div>
 
-      <div class="col-lg-4 col-md-4 col-sm-12 mx-auto">
-      <button class="selector-button">
+                    <div class="col-lg-4 col-md-4 col-sm-12 mx-auto">
+                        <input class="d-none radio-buttons " type="checkbox" name="typeOfProject" id="websiteMaintenance" data-value="websiteMaintenance">
+                        <label class="selector-button" for="websiteMaintenance">
         <div class="selector-button-txt">Website Maintenance</div>
-      </button></div>
-    </div>
-    <div class="project-selector-options col-12 row mx-auto">
-      <div class="col-lg-4 col-md-4 col-sm-12 mx-auto mt-3">
-      <button class="selector-button">
+      </label>
+                    </div>
+                </div>
+                <div class="project-selector-options col-12 row mx-auto">
+                    <div class="col-lg-4 col-md-4 col-sm-12 mx-auto ">
+                        <input class="d-none radio-buttons " type="checkbox" name="typeOfProject" id="websiteDevelopment" data-value="websiteDevelopment">
+                        <label class="selector-button" for="websiteDevelopment">
         <div class="selector-button-txt">Website Development</div>
-      </button></div>
+      </label>
+                    </div>
 
-      <div class="col-lg-4 col-md-4 col-sm-12 mx-auto">
-      <button class="selector-button">
+                    <div class="col-lg-4 col-md-4 col-sm-12 mx-auto">
+                        <input class="d-none radio-buttons " type="checkbox" name="typeOfProject" id="branding" data-value="branding">
+                        <label class="selector-button" for="branding">
         <div class="selector-button-txt">Branding</div>
-      </button></div>
+      </label>
+                    </div>
 
-      <div class="col-lg-4 col-md-4 col-sm-12 mx-auto">
-      <button class="selector-button">
+                    <div class="col-lg-4 col-md-4 col-sm-12 mx-auto">
+                        <input class="d-none radio-buttons " type="checkbox" name="typeOfProject" id="logoDesign" data-value="logoDesign">
+                        <label class="selector-button" for="logoDesign">
         <div class="selector-button-txt">Logo Design</div>
-      </button></div>
-    </div>
-    </div>
-    </div>
+      </label>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
-    <!-- closing of type selector -->
+        <!-- closing of type selector -->
 
-    <!-- opening of inputs -->
-    <div class="inputs-section row mx-auto">
-      <div class="inputs-container col-12 mx-auto">
-        <h2 class="input-container-heading">YOUR NAME</h2>
-        <input type="text" placeholder="Your Name" class="input-field" />
-      </div>
+        <!-- opening of inputs -->
+        <div class="inputs-section row mx-auto">
+            <div class="inputs-container col-12 mx-auto">
+                <h2 class="input-container-heading">YOUR NAME</h2>
+                <input type="text" required placeholder="Your Name" class="input-field" id="username" />
+            </div>
 
-      <div class="inputs-container col-12 mx-auto">
-        <h2 class="input-container-heading">YOUR EMAIL</h2>
-        <input type="text" placeholder="Your Email" class="input-field" />
-      </div>
+            <div class="inputs-container col-12 mx-auto">
+                <h2 class="input-container-heading">YOUR EMAIL</h2>
+                <input type="text" required placeholder="Your Email" class="input-field" id="email" />
+            </div>
 
-      <div class="inputs-container col-12 mx-auto">
-        <h2 class="input-container-heading">PROJECT BRIEF</h2>
-        <textarea placeholder="Project Details" class="input-field" rows="3"></textarea>
-      </div>
+            <div class="inputs-container col-12 mx-auto">
+                <h2 class="input-container-heading">PROJECT BRIEF</h2>
+                <textarea required placeholder="Project Details" class="input-field" rows="3" id="projectBrief"></textarea>
+            </div>
 
-      <div class="inputs-container col-12 mx-auto">
-        <h2 class="input-container-heading">YOUR BUDGET</h2>
-        <input type="text" placeholder="Project Budget" class="input-field" />
-      </div>
+            <div class="inputs-container col-12 mx-auto">
+                <h2 class="input-container-heading">YOUR BUDGET</h2>
+                <input type="text" required placeholder="Project Budget" class="input-field" id="projectBudget" />
+            </div>
 
-      <button class="form-button mx-auto">
+            <button class="form-button mx-auto" type="submit">
         Submit Details
       </button>
+        </div>
+    </form>
+    <!-- closing of inputs -->
+
+    <!-- closing of form -->
+
+    <!-- opening of Footer -->
+    <div class="container-fluid">
+        <div class="footer">
+
+            <div class="footer-columns-all row ml-2">
+                <div class="col-xl-3 col-lg-3 row">
+                    <div class="footer-flint-info col-md-12 col-sm-12 mx-2">
+                        <div>
+                            <h2 class="footer-logo">FlinT <br>Studio</h2>
+                        </div>
+                        <div class="footer-info-group-all">
+                            <div class="footer-info-group"><img class="footer-info-group-icon" src="/Images/footermailicon.svg"></img>
+                                <p class="footer-info-group-text">Enquiry@FlinT.com</p>
+                            </div>
+
+                            <div class="footer-info-group"><img class="footer-info-group-icon" src="/Images/footerlocationicon.svg"></img>
+                                <p class="footer-info-group-text">Mumbai, India</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-columns col-xl-3 col-lg-3 col-md-4 row">
+                    <div class="col-sm-6">
+                        <h4 class="footer-column-title">PAGES</h4>
+                        <div class="footer-column-items-all">
+                            <a class="footer-column-items" href="./about.html">About</a>
+                            <a class="footer-column-items" href="./project.html">Products</a>
+                            <a class="footer-column-items" href="./work.html">Work</a>
+                            <a class="footer-column-items" href="./services.html">Services</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-columns col-xl-3 col-lg-3 col-md-4 row">
+                    <div class="col-sm-6">
+                        <h4 class="footer-column-title">PROJECTS</h4>
+                        <div class="footer-column-items-all">
+                            <a class="footer-column-items" href="#">Terms</a>
+                            <a class="footer-column-items" href="#">Privacy Policy</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-columns col-xl-3 col-lg-3 col-md-4 row">
+                    <div class="col-sm-6">
+                        <h4 class="footer-column-title">FOLLOW US</h4>
+                        <div class="footer-column-items-all">
+                            <a class="footer-column-items" href="#">Facebook</a>
+                            <a class="footer-column-items" href="#">Instagram</a>
+                            <a class="footer-column-items" href="#">Youtube</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="footer-columns col-xl-12 col-lg-12 mb-5">
+                        <div class="col-md-12 col-sm-12">
+                            <h4 class="footer-column-title-h4">© 2022 Copyright.Flint Studio</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
-  </div>
-  <!-- closing of inputs -->
-
-  <!-- closing of form -->
-
-  <!-- opening of Footer -->
-  <div class="container-fluid">
-    <div class="footer">
-
-      <div class="footer-columns-all row ml-2">
-        <div class="col-xl-3 col-lg-3 row">
-          <div class="footer-flint-info col-md-12 col-sm-12 mx-2">
-            <div>
-              <h2 class="footer-logo">FlinT <br>Studio</h2>
-            </div>
-            <div class="footer-info-group-all">
-              <div class="footer-info-group"><img class="footer-info-group-icon" src="/Images/footermailicon.svg"></img>
-                <p class="footer-info-group-text">Enquiry@FlinT.com</p>
-              </div>
-
-              <div class="footer-info-group"><img class="footer-info-group-icon"
-                  src="/Images/footerlocationicon.svg"></img>
-                <p class="footer-info-group-text">Mumbai, India</p>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-        <div class="footer-columns col-xl-3 col-lg-3 col-md-4 row">
-          <div class="col-sm-6">
-            <h4 class="footer-column-title">PAGES</h4>
-            <div class="footer-column-items-all">
-              <a class="footer-column-items" href="./about.html">About</a>
-              <a class="footer-column-items" href="./project.html">Products</a>
-              <a class="footer-column-items" href="./work.html">Work</a>
-              <a class="footer-column-items" href="./services.html">Services</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="footer-columns col-xl-3 col-lg-3 col-md-4 row">
-          <div class="col-sm-6">
-            <h4 class="footer-column-title">PROJECTS</h4>
-            <div class="footer-column-items-all">
-              <a class="footer-column-items" href="#">Terms</a>
-              <a class="footer-column-items" href="#">Privacy Policy</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="footer-columns col-xl-3 col-lg-3 col-md-4 row">
-          <div class="col-sm-6">
-            <h4 class="footer-column-title">FOLLOW US</h4>
-            <div class="footer-column-items-all">
-              <a class="footer-column-items" href="#">Facebook</a>
-              <a class="footer-column-items" href="#">Instagram</a>
-              <a class="footer-column-items" href="#">Youtube</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="footer-columns col-xl-12 col-lg-12 mb-5">
-            <div class="col-md-12 col-sm-12">
-              <h4 class="footer-column-title-h4">© 2022 Copyright.Flint Studio</h4>
-            </div>
-          </div>
-        </div>
-
-      </div>
     </div>
-  </div>
-  </div>
-  <!-- closing of footer -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
+    <script src="./js/forms.js"></script>
+    <!-- closing of footer -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 
 </html>
