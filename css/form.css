@@ -55,6 +55,8 @@ a {
     margin: 0.5em 0.2em;
     justify-content: center;
     align-items: center;
+    padding-left: 0px !important;
+    row-gap: 20px;
 }
 
 .selector-button {
@@ -133,3 +135,12 @@ a {
 
 
 /* closing of form */
+
+@media (max-width:500px) {
+    .form-section {
+        margin-inline: 0px !important;
+    }
+    .inputs-section {
+        max-width: 100%;
+    }
+}
