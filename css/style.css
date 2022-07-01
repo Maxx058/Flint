@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+:root {
+    --swiper-navigation-size: 28px !important;
+}
+
 .container-fluid {
     width: auto !important;
     max-width: 1280px;
@@ -164,7 +168,7 @@ header {
 }
 
 .section-heading {
-    font-size: 3em;
+    font-size: 2.2em;
     font-weight: 600;
     text-align: center;
     margin-top: 0.4em;
@@ -575,8 +579,8 @@ header {
     display: flex;
     flex-direction: column;
     max-width: 95%;
-    justify-content: center;
-    gap: 2em;
+    justify-content: start;
+    gap: 0.1em;
 }
 
 .store-product-image-container {
@@ -588,8 +592,7 @@ header {
 }
 
 .store-product-image {
-    max-height: 20em;
-    width: 20em;
+    max-width: 100%;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
@@ -752,6 +755,11 @@ header {
 
 /* closing of get in touch*/
 
+.swiper-button-next::after,
+.swiper-button-prev::next {
+    font-size: 28px !important;
+}
+
 
 /* opening of footer */
 
@@ -833,6 +841,43 @@ header {
 .footer-column-items {
     font-size: 1em;
     color: #666666;
+}
+
+.footer-columns:not(:first-child) {
+    justify-content: center;
+}
+
+.footer-columns:last-child {
+    justify-content: end;
+}
+
+.text-align-start {
+    text-align: start;
+}
+
+.first-heading {
+    font-size: 3em;
+}
+
+@media (max-width:576px) {
+    .footer-columns {
+        justify-content: start !important;
+    }
+    .footer-columns-container {
+        row-gap: 32px;
+    }
+    .project-container>div:not(.project-description-container) {
+        justify-content: center !important;
+    }
+    .carousel-inner {
+        padding: 0px !important;
+    }
+    .carousel .card {
+        padding: 10px;
+    }
+    .carousel .card-body {
+        padding: 16px;
+    }
 }
 
 
