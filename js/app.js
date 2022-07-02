@@ -38,7 +38,7 @@ const swiper = new Swiper(".swiper", {
 
 // cart js
 
-var url = "http://localhost:5000"
+var url = "https://flint-backendserver.herokuapp.com"
 
 var username = localStorage.getItem('username');
 var email = localStorage.getItem('email');
