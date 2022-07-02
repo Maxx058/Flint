@@ -803,7 +803,6 @@ header {
 .footer-flint-info {
     display: flex;
     flex-direction: column;
-    width: 1em;
 }
 
 .footer-logo {
