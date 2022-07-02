@@ -28,6 +28,7 @@ const getProdData = async() => {
     });
 }
 getProdData().then(() => {
+    console.log(prodData);
     const storeDiv = document.getElementById('store-container');
     storeDiv.innerHTML = "";
     prodData.forEach(prod => {

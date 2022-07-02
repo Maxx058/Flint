@@ -229,16 +229,20 @@ var shoppingCart = (function() {
             } else {
                 currentProd = {};
             }
-
+            var present = false;
             for (var item in cart) {
                 if (cart[item].name === name) {
                     cart[item].count++;
                     saveCart();
+                    present = true;
                     // return;
                 }
             }
-            var item = new Item(name, price, count);
-            cart.push(item);
+            if (!present) {
+
+                var item = new Item(name, price, count);
+                cart.push(item);
+            }
             updateCart();
             saveCart();
         }
@@ -362,18 +366,21 @@ $('.clear-cart').click(function() {
 function displayCart() {
     var cartArray = shoppingCart.listCart();
     var output = "";
+    console.log(cartArray)
     for (var i in cartArray) {
         output += "<tr>" +
             "<td>" + cartArray[i].name + "</td>" +
             "<td>(" + cartArray[i].price + ")</td>" +
-            "<td><div class='input-group'><button class='minus-item input-group-addon btn btn-primary' data-name=" + cartArray[i].name + ">-</button>" +
+            `<td><div class='input-group'><button class='minus-item input-group-addon btn btn-primary' data-name="${cartArray[i].name}" data-price="${cartArray[i].price}" >-</button>` +
             "<input type='number' class='item-count form-control' data-name='" + cartArray[i].name + "' value='" + cartArray[i].count + "'>" +
-            "<button class='plus-item btn btn-primary input-group-addon' data-name=" + cartArray[i].name + ">+</button></div></td>" +
-            "<td><button class='delete-item btn btn-danger' data-name=" + cartArray[i].name + ">X</button></td>" +
+            `<button class='plus-item btn btn-primary input-group-addon' data-name="${cartArray[i].name}" data-price="${cartArray[i].price}" >+</button></div></td>` +
+            `<td><button class='delete-item btn btn-danger' data-name="${cartArray[i].name}">X</button></td>` +
             " = " +
             "<td>" + cartArray[i].total + "</td>" +
             "</tr>";
+        // same expression as above but variables in curly brackets of js
     }
+    console.log(output)
     $('.show-cart').html(output);
     $('.total-cart').html(shoppingCart.totalCart());
     $('.total-count').html(shoppingCart.totalCount());
@@ -397,7 +404,9 @@ $('.show-cart').on("click", ".minus-item", function(event) {
     // +1
 $('.show-cart').on("click", ".plus-item", function(event) {
     var name = $(this).data('name')
-    shoppingCart.addItemToCart(name);
+    var price = $(this).data('price')
+    console.log(name, price, $(this), event)
+    shoppingCart.addItemToCart(name, price, 1);
     displayCart();
 })
 
