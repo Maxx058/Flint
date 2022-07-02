@@ -281,3 +281,22 @@ a {
     color: #666666;
     text-align: center;
 }
+
+@media (max-width:576px) {
+    .about-img-container {
+        max-width: 100%;
+        margin-top: 1em;
+    }
+    .img-heading {
+        font-size: 24px !important;
+    }
+    .about-section-heading {
+        font-size: 2.2em;
+    }
+    .team-heading {
+        font-size: 2.2em;
+    }
+    .team-container>div {
+        row-gap: 32px;
+    }
+}

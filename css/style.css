@@ -952,6 +952,12 @@ header {
     header {
         padding-top: 0px !important;
     }
+    .getintouch-section {
+        width: 100%;
+    }
+    .getintouch-section>.row {
+        row-gap: 40px;
+    }
 }
 
 
