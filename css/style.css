@@ -886,9 +886,11 @@ header {
     outline: none !important;
 }
 
-.navbar-collapse .nav-item {
-    margin-inline: auto;
-    justify-content: center;
+@media (max-width:1200px) {
+    .navbar-collapse .nav-item {
+        margin-inline: auto;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 576px) {
