@@ -64,7 +64,7 @@ header {
     margin-top: 2em;
     list-style: none;
     display: flex;
-    gap: 40px;
+    gap: 12px;
 }
 
 .navbar-nav li {
@@ -150,7 +150,7 @@ header {
         top: 50%;
     }
     .nav-cta {
-        margin-top: 2.5em;
+        margin-top: 12px;
     }
 }
 
@@ -523,7 +523,6 @@ header {
     justify-content: left;
     gap: 8px;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
 }
 
@@ -883,6 +882,15 @@ header {
     font-size: 3em;
 }
 
+.navbar-toggler {
+    outline: none !important;
+}
+
+.navbar-collapse .nav-item {
+    margin-inline: auto;
+    justify-content: center;
+}
+
 @media (max-width: 576px) {
     .footer-columns {
         justify-content: start !important;
@@ -901,6 +909,25 @@ header {
     }
     .carousel .card-body {
         padding: 16px;
+    }
+    .item-grid-group-heading {
+        font-size: 2.2em;
+    }
+    .first-heading {
+        font-size: 2.6em;
+    }
+    .intro-container {
+        margin-top: 1em;
+    }
+    .navbar-brand {
+        font-size: 2.2em !important;
+    }
+    .navbar-toggler-icon {
+        width: 1.2em !important;
+        height: 1.2em !important;
+    }
+    .nav-link {
+        font-size: 20px !important;
     }
 }
 
