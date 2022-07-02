@@ -93,6 +93,8 @@ function handleOrder() {
         .then(data => {
             updateCartId('');
         })
+    shoppingCart.clearCart();
+
 }
 
 // hidemodal function that hides the modal
