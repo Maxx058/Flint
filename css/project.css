@@ -98,7 +98,6 @@ a {
 }
 
 .project-image-container {
-  overflow: hidden;
   max-width: 20em;
   height: 20em;
   justify-content: center !important;
@@ -106,10 +105,11 @@ a {
   /* background-size: cover; */
   padding: 0 !important;
   margin: 1em auto;
+  overflow: hidden;
 }
 
 .project-img {
-  width: 30em;
+  width: 24em;
   justify-content: center;
 }
 
