@@ -1,4 +1,4 @@
-.menu{
+.menu {
     height: 6em;
     /* stroke: rgba(31, 135, 255,0.5) !important; */
     line-height: 0.5em;
@@ -10,7 +10,8 @@
     max-width: 90%;
     display: flex;
 }
-.btn{
+
+.btn {
     font-size: 1em !important;
     border-radius: 15px !important;
     color: white !important;
@@ -18,40 +19,52 @@
     padding: 0.5em 1em !important;
     /* margin: 1em !important; */
 }
-.col{
+
+.col {
     display: block;
-    justify-content: center;}
-.prod{
+    justify-content: center;
+}
+
+.prod {
     /* margin-top: 3em; */
     display: flex;
     flex-direction: row;
     overflow: hidden;
-
 }
+
 .show-cart li {
     display: flex;
-  }
-  .card {
+}
+
+.card {
     width: 30em !important;
     overflow: hidden;
-    justify-content:center !important;
+    justify-content: center !important;
     border-radius: 20px !important;
-    margin:1em 1em !important;
-  }
-  .card-img-top {
+    margin: 1em 1em !important;
+}
+
+.card-img-top {
     width: 30em !important;
     height: auto !important;
     align-self: center;
-  }
-  @media screen and (min-width:500px) {
-    .card{
-        width:17em !important;
+}
+
+@media screen and (min-width:500px) {
+    .card {
+        width: 17em !important;
     }
-  }
-  .card-ele{
+}
+
+.card-ele {
     justify-content: center;
     display: flex;
-  }
-  .modal-content{
-    max-width:100%
-  }
+}
+
+.modal-content {
+    max-width: 100%
+}
+
+.card-title {
+    padding-inline: 0px !important;
+}

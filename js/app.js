@@ -38,6 +38,8 @@ const swiper = new Swiper(".swiper", {
 
 // cart js
 
+var url = "http://localhost:5000"
+
 var username = localStorage.getItem('username');
 var email = localStorage.getItem('email');
 // implement save function that saves the data of username adn email from corresponding elements from modal
@@ -66,19 +68,22 @@ function updateUsernameEmail(userVal, emailVal) {
 var currentProd = {};
 
 function handleOrder() {
+    if (cartId == '' || cartId == null) {
+        return;
+    }
     console.log(shoppingCart.listCart());
     var cartArray = shoppingCart.listCart();
     var orderDetails = {
         username: username,
         email: email,
-        products: cartArray
+        products: cartArray,
+        cart_id: cartId
     }
     hideModalUserModal();
     showPostOrderModal();
     // network post request with the orderDetails object
-    fetch('/api/orders', {
+    fetch(url + '/checkout', {
             method: 'POST',
-            credentials: 'same-origin',
             headers: {
                 'Content-Type': 'application/json'
             },
@@ -111,13 +116,14 @@ function updateCartId(id) {
 
 const updateCart = () => {
     // network post request with the orderDetails object
+    console.log(cartId)
     var cartArray = shoppingCart.listCart();
     if (cartId != '') {
         var orderDetails = {
             username: username,
             email: email,
             products: cartArray,
-            cart_idd: cartId
+            cart_id: cartId
         }
     } else
         var orderDetails = {
@@ -126,9 +132,8 @@ const updateCart = () => {
             products: cartArray
         }
     console.log(orderDetails);
-    fetch('/api/orders', {
+    fetch(url + '/cart', {
             method: 'POST',
-            credentials: 'same-origin',
             headers: {
                 'Content-Type': 'application/json'
             },
@@ -136,11 +141,29 @@ const updateCart = () => {
         })
         .then(response => response.json())
         .then(data => {
-            updateCartId(data._id);
+            console.log(data)
+            if (data.cart_id)
+                updateCartId(data.cart_id);
         })
 }
 
-
+const deleteCartFromRemote = () => {
+    // network call with delete method on /cart endpoint
+    fetch(url + '/cart', {
+            method: 'DELETE',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                cart_id: cartId
+            })
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log(data)
+            updateCartId('');
+        })
+}
 
 // ************************************************
 // Shopping Cart API
@@ -209,11 +232,12 @@ var shoppingCart = (function() {
                 if (cart[item].name === name) {
                     cart[item].count++;
                     saveCart();
-                    return;
+                    // return;
                 }
             }
             var item = new Item(name, price, count);
             cart.push(item);
+            updateCart();
             saveCart();
         }
         // Set count from item
@@ -253,6 +277,7 @@ var shoppingCart = (function() {
     // Clear cart
     obj.clearCart = function() {
         updateUsernameEmail("", "");
+        deleteCartFromRemote();
         cart = [];
         saveCart();
     }

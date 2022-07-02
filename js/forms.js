@@ -1,4 +1,4 @@
-const url = 'localhost:5000/enquiry'
+const url = 'http://localhost:5000/enquiry'
 
 function submitForm(e) {
     e.preventDefault();
@@ -13,22 +13,26 @@ function submitForm(e) {
     var email = document.getElementById("email").value;
     var projectBrief = document.getElementById("projectBrief").value;
     var projectBudget = document.getElementById("projectBudget").value;
-    postData('', { username: username, email: email, checked: checked, projectBrief: projectBrief, projectBudget: projectBudget })
+    postData(url, { username: username, email: email, checked: checked, projectBrief: projectBrief, projectBudget: projectBudget })
     return false;
 }
 
 const postData = async(url = '', data = {}) => {
     const response = await fetch(url, {
         method: 'POST',
-        credentials: 'same-origin',
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify(data)
+        body: JSON.stringify({
+            name: data.username,
+            email: data.email,
+            details: data.projectBrief,
+            budget: data.projectBudget,
+            requirements: data.checked
+        })
     });
     try {
-        const newData = await response.json();
-        return newData;
+        console.log(await response.json());
     } catch (error) {
         console.log("error", error);
     }
