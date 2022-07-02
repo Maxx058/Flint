@@ -196,6 +196,7 @@ var shoppingCart = (function() {
 
     // Save cart
     function saveCart() {
+        updateCart();
         sessionStorage.setItem('shoppingCart', JSON.stringify(cart));
     }
 
