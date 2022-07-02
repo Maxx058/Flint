@@ -46,7 +46,7 @@ li,
 a {
     font-weight: 600px;
     font-size: 16px;
-    color: #121212;
+    color: white !important;
     text-decoration: none;
 }
 
@@ -87,6 +87,7 @@ header {
 
 .navbar-nav li a {
     transition: all 0.3s ease 0s;
+    color: #121212 !important;
 }
 
 .navbar-nav li a:hover {
@@ -213,7 +214,7 @@ header {
 }
 
 .section-image-container {
-    background-image: url(/Images/main.jpg);
+    background-image: url(/Images/sleepiest2.jpg);
     background-attachment: fixed;
     height: 35em;
     border-radius: 40px;
@@ -395,6 +396,7 @@ header {
     cursor: pointer;
     font-size: 1em;
     font-weight: 500;
+    color: #121212 !important;
     background-image: linear-gradient(to top, #e2e2e2 50%, #ffffff 50%);
     background-size: 100% 200%;
     background-position: 0% 0%;

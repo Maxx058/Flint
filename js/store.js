@@ -22,7 +22,7 @@
 // make network call to retrieve prod data
 let prodData;
 const getProdData = async() => {
-    const response = await fetch('http://localhost:5000/products').then(res => res.json()).then(data => {
+    const response = await fetch('https://flint-backendserver.herokuapp.com/products').then(res => res.json()).then(data => {
         console.log(data);
         prodData = data;
     });
