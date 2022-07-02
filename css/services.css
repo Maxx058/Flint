@@ -238,3 +238,42 @@ a {
 
 
 /* closing of working benefits */
+
+@media(max-width:576px) {
+    .heading {
+        margin-top: 1em;
+        font-size: 2.2em !important;
+    }
+    /* closing of Section 1 */
+    /* opening of video container */
+    .video-container {
+        margin-top: 3em;
+    }
+    .service-briefs-container {
+        max-width: 100%;
+    }
+    .whatwedo {
+        margin-top: 3em;
+    }
+    .whatwedo-heading {
+        font-size: 32px;
+    }
+    .whatwedo-body {
+        font-size: 18px;
+    }
+    .service-briefs {
+        margin-top: 3em;
+    }
+    .service-briefs-heading {
+        font-size: 2.2em;
+    }
+    .working-benefits {
+        margin-top: 3em;
+    }
+    .working-benefits-heading {
+        font-size: 2.2em;
+    }
+    .working-benefits-container {
+        margin-top: 0px;
+    }
+}
