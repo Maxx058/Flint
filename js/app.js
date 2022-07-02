@@ -53,6 +53,8 @@ function saveValues() {
         shoppingCart.addItemToCart(currentProd.name, currentProd.price, currentProd.count);
         displayCart();
     }
+    // set innerhtml of #usernameSpan to username
+    document.getElementById('usernameSpan').innerHTML = username;
     // dismiss modal with id usernameEmailModal
 }
 // implmement function updateUsernameEmail, that takes username and email, and changes the value of variables username and email, and then saves them to localStorage
@@ -322,17 +324,6 @@ var shoppingCart = (function() {
         return cartCopy;
     }
 
-    // cart : Array
-    // Item : Object/Class
-    // addItemToCart : Function
-    // removeItemFromCart : Function
-    // removeItemFromCartAll : Function
-    // clearCart : Function
-    // countCart : Function
-    // totalCart : Function
-    // listCart : Function
-    // saveCart : Function
-    // loadCart : Function
     return obj;
 })();
 
