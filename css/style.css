@@ -916,18 +916,39 @@ header {
     .first-heading {
         font-size: 2.6em;
     }
-    .intro-container {
-        margin-top: 1em;
-    }
     .navbar-brand {
         font-size: 2.2em !important;
+        margin-top: 0px !important;
+        margin: 0px !important;
     }
     .navbar-toggler-icon {
         width: 1.2em !important;
         height: 1.2em !important;
     }
     .nav-link {
-        font-size: 20px !important;
+        font-size: 16px !important;
+    }
+    .subheading {
+        font-size: 1em;
+    }
+    .intro-services-line-seperator {
+        width: 9%;
+    }
+    .intro-services-item {
+        font-size: 16px;
+    }
+    .section-image-container {
+        height: 28em;
+        margin-top: 2em;
+    }
+    .intro-container {
+        margin-top: 0px;
+    }
+    .navbar-nav {
+        margin-top: 1.2em;
+    }
+    header {
+        padding-top: 0px !important;
     }
 }
 
