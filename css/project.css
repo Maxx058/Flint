@@ -33,7 +33,7 @@ a {
   font-weight: 600;
   width: 80%;
   text-align: center;
-  max-width: 800px;
+  max-width: 800px !important;
 }
 
 .project-title-subheading {
@@ -165,5 +165,9 @@ a {
   .project-image-container {
     max-width: 90% !important;
     margin-inline: auto;
+  }
+
+  .project-description-container {
+    justify-content: start;
   }
 }

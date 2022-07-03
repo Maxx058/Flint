@@ -63,7 +63,7 @@ header {
   margin-top: 2em;
   list-style: none;
   display: flex;
-  gap: 12px;
+  gap: 56px;
 }
 
 .navbar-nav li {
@@ -311,7 +311,6 @@ header {
 }
 
 .services-button-icon {
-  background-image: url("/Images/brush.svg");
   height: 32px;
   width: 32px;
   background-size: contain;
